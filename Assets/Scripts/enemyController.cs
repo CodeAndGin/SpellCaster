@@ -20,7 +20,8 @@ public class enemyController : MonoBehaviour {
 	void Update () {
 		if (health <= 0f) death();
 		if (transform.position.x < -20) death();
-		rb.AddForce(-transform.right*speed);
+		//rb.AddForce(-transform.right*speed);
+		transform.Translate(-Vector3.right*Time.deltaTime*speed);
 	}
 
 	void damage() {

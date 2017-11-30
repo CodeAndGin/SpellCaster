@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class playerSpawner : MonoBehaviour {
 
-	private float timeTillSpawn = 3.0f;
 	private bool playerAlive = true;
 	public GameObject newPlayer;
 	private GameObject makeNewPlayer;
@@ -15,9 +14,9 @@ public class playerSpawner : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (playerAlive == false) {
-			spawn();
+			StartCoroutine("spawn");
 		}
-		else if (playerAlive == true) timeTillSpawn = 3.0f;
+		else if (playerAlive == true) StopCoroutine("spawn");
 	}
 
 	void playerIsDead () {
@@ -28,10 +27,8 @@ public class playerSpawner : MonoBehaviour {
 		playerAlive = true;
 	}
 
-	void spawn() {
-		timeTillSpawn -= Time.deltaTime;
-		if (timeTillSpawn <= 0.0f) {
-			makeNewPlayer = Instantiate(newPlayer, transform.position, Quaternion.identity) as GameObject;
-		}
+	IEnumerator spawn() {
+		yield return new WaitForSeconds(3.0f);
+		makeNewPlayer = Instantiate(newPlayer, transform.position, Quaternion.identity) as GameObject;
 	}
 }

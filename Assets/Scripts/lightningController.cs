@@ -4,23 +4,20 @@ using UnityEngine;
 
 public class lightningController : MonoBehaviour {
 
-	private float timeTillDeath = 1.0f;
 	// Use this for initialization
 	void Start () {
-
+		decay();
 	}
 
 	// Update is called once per frame
 	void Update () {
-		timeTillDeath -= Time.deltaTime;
-		if (timeTillDeath <= 0.0f) death();
 	}
 
 	void enemyInteraction(GameObject enemy) {
 		enemy.gameObject.SendMessage("damage");
 	}
 
-	public void death() {
-		Destroy(gameObject);
+	public void decay() {
+		Destroy(gameObject, 1.0f);
 	}
 }

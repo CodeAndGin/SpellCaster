@@ -10,12 +10,14 @@ public class spellMove : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
+		if (gameObject.tag == "Shield") decay();
 	}
 
 	// Update is called once per frame
 	void Update () {
 		// Vector2 movement = new Vector2 (1.0f, 0.0f);
 		rb.AddForce(transform.right*speed);
+		if (transform.position.x > 25.0f) death();
 	}
 
 	void enemyInteraction(GameObject enemy) {
@@ -24,5 +26,9 @@ public class spellMove : MonoBehaviour {
 
 	public void death() {
 		Destroy(gameObject);
+	}
+
+	public void decay() {
+		Destroy(gameObject, 5.0f);
 	}
 }

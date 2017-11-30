@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class enemySpawner : MonoBehaviour {
 
-	private float timeTillSpawn;
 	private bool enemyAlive;
 	public GameObject enemy;
 	private GameObject newEnemy;
@@ -18,9 +17,9 @@ public class enemySpawner : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (!enemyAlive) {
-			spawn();
+			StartCoroutine("spawn");
 		} else if (enemyAlive) {
-			timeTillSpawn = 3.0f;
+			StopCoroutine("spawn");
 		}
 	}
 
@@ -32,10 +31,8 @@ public class enemySpawner : MonoBehaviour {
 		enemyAlive = false;
 	}
 
-	void spawn() {
-		timeTillSpawn -= Time.deltaTime;
-		if (timeTillSpawn <= 0.0f) {
-			newEnemy = Instantiate(enemy, transform.position, Quaternion.identity) as GameObject;
-		}
+	IEnumerator spawn() {
+		yield return new WaitForSeconds(3.0f);
+		newEnemy = Instantiate(enemy, transform.position, Quaternion.identity) as GameObject;
 	}
 }
