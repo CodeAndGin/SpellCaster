@@ -11,7 +11,10 @@ public class TextController : MonoBehaviour {
 	public GameObject lightning;
 	public GameObject shield;
 	public Text typing;
-	GameObject spell;
+
+	private char enemyLetter;
+	private char enemyLetterCaps;
+	private GameObject spell;
 
 
 
@@ -22,6 +25,10 @@ public class TextController : MonoBehaviour {
 
 	void Update () {
 		addToString();
+		if (GameObject.Find("Enemy(Clone)") is GameObject) {
+			enemyLetter = GameObject.Find("Enemy(Clone)").GetComponent<enemyName>().firstLetter;
+			enemyLetterCaps = GameObject.Find("Enemy(Clone)").GetComponent<enemyName>().firstLetterAlt;
+		}
 	}
 
 	void addToString() {
@@ -30,46 +37,15 @@ public class TextController : MonoBehaviour {
 				//castSpell();
 				spells(typing.text);
 				typing.text = "";
-			} else {
+			} else if ((c != enemyLetter) && (c != enemyLetterCaps)){
 				typing.text = typing.text + c;
 			}
 		}
 	}
-// Think this isn't really needed
-	// void castSpell() {
-	// 	switch (typing.text){
-	// 		default:
-	// 			gameObject.SendMessage("death");
-	// 			break;
-    //
-	// 		case "fireball":
-	// 			spells(typing.text);
-	// 			//Debug.Log(typing.text);
-	// 			break;
-    //
-	// 		case "Fireball":
-	// 			spells(typing.text);
-	// 			//Debug.Log(typing.text);
-	// 			break;
-    //
-	// 		case "icicle":
-	// 			spells(typing.text);
-	// 			//Debug.Log(typing.text);
-	// 			break;
-    //
-	// 		case "Icicle":
-	// 			spells(typing.text);
-	// 			//Debug.Log(typing.text);
-	// 			break;
-    //
-	// 		case "lightning"
-    //
-    //
-	// 	}
-	// }
 
 	void spells(string s) {
 		if (s == "fireball" || s == "Fireball") {
+			Debug.Log(typing.text);
 			spell = Instantiate(fire, transform.position, Quaternion.identity) as GameObject;
 		} else if (s == "icicle" || s == "Icicle") {
 			spell = Instantiate(ice, transform.position, Quaternion.identity) as GameObject;
