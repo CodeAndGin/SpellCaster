@@ -15,7 +15,6 @@ public class enemyName : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
 		display = GameObject.Find("enemyTitle").GetComponent<Text>();;
 		names = new ArrayList();
 		names.Add("Fiend");

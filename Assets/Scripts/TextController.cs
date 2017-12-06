@@ -25,9 +25,9 @@ public class TextController : MonoBehaviour {
 
 	void Update () {
 		addToString();
-		if (GameObject.Find("Enemy(Clone)") is GameObject) {
-			enemyLetter = GameObject.Find("Enemy(Clone)").GetComponent<enemyName>().firstLetter;
-			enemyLetterCaps = GameObject.Find("Enemy(Clone)").GetComponent<enemyName>().firstLetterAlt;
+		if (GameObject.FindWithTag("Enemy") is GameObject) {
+			enemyLetter = GameObject.FindWithTag("Enemy").GetComponent<enemyName>().firstLetter;
+			enemyLetterCaps = GameObject.FindWithTag("Enemy").GetComponent<enemyName>().firstLetterAlt;
 		}
 	}
 

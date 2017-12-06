@@ -6,6 +6,7 @@ public class enemyController : MonoBehaviour {
 	public float health;
 	public int speed;
 	private Rigidbody2D rb;
+	private levelController levels;
 
 	private GameObject spawner;
 	// Use this for initialization
@@ -13,6 +14,7 @@ public class enemyController : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D>();
 		spawner = GameObject.Find("EnemySpawner");
 		spawner.gameObject.SendMessage("enemyIsAlive");
+		levels = GameObject.Find("LevelController").GetComponent<levelController>();
 		//speed = -1.0f;
 	}
 
@@ -41,6 +43,9 @@ public class enemyController : MonoBehaviour {
 
 	void death() {
 		spawner.gameObject.SendMessage("enemyIsDead");
+		if (gameObject.tag == "Miniboss") {
+			levels.gameObject.SendMessage("NextLevel");
+		}
 		Destroy(gameObject);
 	}
 }
