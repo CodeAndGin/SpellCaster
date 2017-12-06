@@ -34,10 +34,9 @@ public class TextController : MonoBehaviour {
 	void addToString() {
 		foreach (char c in Input.inputString) {
 			if (Input.GetKeyDown(KeyCode.Return)) {
-				//castSpell();
 				spells(typing.text);
 				typing.text = "";
-			} else if ((c != enemyLetter) && (c != enemyLetterCaps)){
+			} else if ((c != enemyLetter) && (c != enemyLetterCaps)) { //Not really sure why AND here instead of OR but it works now so ????
 				typing.text = typing.text + c;
 			}
 		}
