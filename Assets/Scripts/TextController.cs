@@ -44,7 +44,6 @@ public class TextController : MonoBehaviour {
 
 	void spells(string s) {
 		if (s == "fireball" || s == "Fireball") {
-			Debug.Log(typing.text);
 			spell = Instantiate(fire, transform.position, Quaternion.identity) as GameObject;
 		} else if (s == "icicle" || s == "Icicle") {
 			spell = Instantiate(ice, transform.position, Quaternion.identity) as GameObject;
