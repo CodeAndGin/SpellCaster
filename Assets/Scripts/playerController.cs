@@ -16,8 +16,8 @@ public class playerController : MonoBehaviour {
 	}
 
 	void death() {
-		spawner.gameObject.SendMessage("playerIsDead");
-		Destroy(gameObject);
+		spawner.gameObject.SendMessage("playerIsDead"); //tells the spawner that the player dies
+		Destroy(gameObject);	//kills the player
 	}
-	
+
 }
