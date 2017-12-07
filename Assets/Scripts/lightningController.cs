@@ -15,6 +15,7 @@ public class lightningController : MonoBehaviour {
 
 	void enemyInteraction(GameObject enemy) {
 		enemy.gameObject.SendMessage("damage");
+		enemy.gameObject.SendMessage("damage");
 	}
 
 	public void decay() {

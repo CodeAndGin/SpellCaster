@@ -11,7 +11,10 @@ public class TextController : MonoBehaviour {
 	public GameObject lightning;
 	public GameObject shield;
 	public Text typing;
-	GameObject spell;
+
+	private char enemyLetter;
+	private char enemyLetterCaps;
+	private GameObject spell;
 
 
 
@@ -22,51 +25,22 @@ public class TextController : MonoBehaviour {
 
 	void Update () {
 		addToString();
+		if (GameObject.FindWithTag("Enemy") is GameObject) {
+			enemyLetter = GameObject.FindWithTag("Enemy").GetComponent<enemyName>().firstLetter;
+			enemyLetterCaps = GameObject.FindWithTag("Enemy").GetComponent<enemyName>().firstLetterAlt;
+		}
 	}
 
 	void addToString() {
 		foreach (char c in Input.inputString) {
 			if (Input.GetKeyDown(KeyCode.Return)) {
-				//castSpell();
 				spells(typing.text);
 				typing.text = "";
-			} else {
+			} else if ((c != enemyLetter) && (c != enemyLetterCaps)) { //Not really sure why AND here instead of OR but it works now so ????
 				typing.text = typing.text + c;
 			}
 		}
 	}
-// Think this isn't really needed
-	// void castSpell() {
-	// 	switch (typing.text){
-	// 		default:
-	// 			gameObject.SendMessage("death");
-	// 			break;
-    //
-	// 		case "fireball":
-	// 			spells(typing.text);
-	// 			//Debug.Log(typing.text);
-	// 			break;
-    //
-	// 		case "Fireball":
-	// 			spells(typing.text);
-	// 			//Debug.Log(typing.text);
-	// 			break;
-    //
-	// 		case "icicle":
-	// 			spells(typing.text);
-	// 			//Debug.Log(typing.text);
-	// 			break;
-    //
-	// 		case "Icicle":
-	// 			spells(typing.text);
-	// 			//Debug.Log(typing.text);
-	// 			break;
-    //
-	// 		case "lightning"
-    //
-    //
-	// 	}
-	// }
 
 	void spells(string s) {
 		if (s == "fireball" || s == "Fireball") {
