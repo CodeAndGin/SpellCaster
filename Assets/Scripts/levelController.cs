@@ -18,7 +18,7 @@ public class levelController : MonoBehaviour {
 
 	}
 
-	void NextLevel() {
+	void NextLevel() {	/*level is changing here*/
 		level++;
 		levelName = "Level" + level;
 		SceneManager.LoadScene(levelName);

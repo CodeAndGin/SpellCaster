@@ -259,7 +259,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyAlive: 0
   enemy: {fileID: 1611735132267732, guid: 4aa3a297fad1e9e4fa8e3afc3a051836, type: 2}
-  miniboss: {fileID: 0}
+  miniboss: {fileID: 1988002060389948, guid: e078a859a5926144abe480f091ef9207, type: 2}
+  enemyNumber: 0
+  maxEnemies: 0
 --- !u!4 &245311847
 Transform:
   m_ObjectHideFlags: 0
