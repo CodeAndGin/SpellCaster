@@ -101,6 +101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawner: {fileID: 0}
+  hp: 0
+  heart: {fileID: 1099940532787056, guid: a0181284a2cbd9c4a97889e07034032f, type: 2}
+  newHeart: {fileID: 0}
 --- !u!114 &114771781084120684
 MonoBehaviour:
   m_ObjectHideFlags: 1
