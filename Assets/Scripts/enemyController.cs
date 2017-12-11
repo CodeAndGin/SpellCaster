@@ -37,7 +37,8 @@ public class enemyController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D other) {
 		if (other.gameObject.tag == "Player") {
-			other.gameObject.SendMessage("death");	//sends message to player to die.
+			other.gameObject.SendMessage("damage");	//sends message to player to die.
+            death();
 		}
 	}
 

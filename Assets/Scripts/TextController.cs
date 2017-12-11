@@ -53,7 +53,7 @@ public class TextController : MonoBehaviour {
 		} else if (s == "shield" || s == "Shield") {
 			spell = Instantiate(shield, transform.position, Quaternion.identity) as GameObject;
 		} else {
-			gameObject.SendMessage("death");
+			gameObject.SendMessage("damage");
 		}
 	}
 }
