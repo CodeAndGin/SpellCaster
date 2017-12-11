@@ -25,6 +25,7 @@ public class playerController : MonoBehaviour {
     void damage(){
         hp -= 1;
         Debug.Log("HEALTH: "+hp);
+		Destroy(GameObject.Find("heart(Clone)"));
     }
 
 	void death() {
@@ -34,7 +35,7 @@ public class playerController : MonoBehaviour {
 
     void hearts(){
         for (int i=0; i<hp; i++){
-            newHeart = Instantiate(heart, new Vector3(i+-11,1.14f,109.8f), Quaternion.identity) as GameObject;
+            newHeart = Instantiate(heart, new Vector3(-i+-11,1.14f,109.8f), Quaternion.identity) as GameObject;
         }
     }
 
