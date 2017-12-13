@@ -12,7 +12,7 @@ public class enemySpawner : MonoBehaviour {
 	public int enemyNumber;
 	public int maxEnemies;
 
-	public float speed = 1;
+	public float speed = 2;
 
 	// Use this for initialization
 	void Start () {
