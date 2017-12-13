@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class enemyController : MonoBehaviour {
 	public float health;
-	public int speed;
+	public float speed;
 	//The rigidbody so we can move the enemy
 	private Rigidbody2D rb;
 	//So we can get the level number.
@@ -15,6 +15,8 @@ public class enemyController : MonoBehaviour {
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
 		spawner = GameObject.Find("EnemySpawner");
+
+		speed = spawner.GetComponent<enemySpawner>().speed;
 		//Tells the spawner that there is an enemy active
 		spawner.gameObject.SendMessage("enemyIsAlive");
 		levels = GameObject.Find("LevelController").GetComponent<levelController>();
@@ -44,8 +46,9 @@ public class enemyController : MonoBehaviour {
 
 	void death() {
 		spawner.gameObject.SendMessage("enemyIsDead");
+		spawner.gameObject.SendMessage("speedUp");
 		if (gameObject.tag == "Miniboss") {
-			levels.gameObject.SendMessage("NextLevel");
+			levels.gameObject.SendMessage("nLevel");
 		}
 		Destroy(gameObject);
 	}

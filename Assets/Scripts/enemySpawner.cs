@@ -12,6 +12,8 @@ public class enemySpawner : MonoBehaviour {
 	public int enemyNumber;
 	public int maxEnemies;
 
+	public float speed = 2;
+
 	// Use this for initialization
 	void Start () {
 		newEnemy = Instantiate(enemy, transform.position, Quaternion.identity) as GameObject;
@@ -50,5 +52,13 @@ public class enemySpawner : MonoBehaviour {
 		yield return new WaitForSeconds(3.0f);
 		newEnemy = Instantiate(miniboss, transform.position, Quaternion.identity) as GameObject;
 		enemyNumber ++;
+	}
+
+	void speedUp () {
+		speed += 0.5f;
+	}
+
+	void slowDown () {
+		speed = 1f;
 	}
 }
