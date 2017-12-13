@@ -19,16 +19,28 @@ public class enemyName : MonoBehaviour {
 		names = new ArrayList();
 		names.Add("Fiend");
 		names.Add("Goblin");
-		float rando = UnityEngine.Random.Range(0f, 1f);
-		if (rando < 0.5) {
-			rando = (float)Math.Floor(rando);
-		} else {
-			rando = (float)Math.Ceiling(rando);
-		}
-		int rand = (int)rando;
-		name = (string)names[rand];
-		firstLetterAlt = name[0];
-		firstLetter = char.ToLower(firstLetterAlt);
+        names.Add("Chimera");
+        if (firstLetter == 'f')
+        {
+            name = (string)names[0];
+        } else if (firstLetter == 'g')
+        {
+            name = (string)names[1];
+        }
+        else if (firstLetter == 'c')
+        {
+            name = (string)names[2];
+        }
+		//float rando = UnityEngine.Random.Range(0f, 1f);
+		//if (rando < 0.5) {
+		//	rando = (float)Math.Floor(rando);
+		//} else {
+		//	rando = (float)Math.Ceiling(rando);
+		//}
+		//int rand = (int)rando;
+		//name = (string)names[rand];
+		//firstLetterAlt = name[0];
+		//firstLetter = char.ToLower(firstLetterAlt);
 		display.text = name;
 	}
 

@@ -16,7 +16,12 @@ public class enemyController : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D>();
 		spawner = GameObject.Find("EnemySpawner");
 
-		speed = spawner.GetComponent<enemySpawner>().speed;
+        health = spawner.GetComponent<enemySpawner>().health;
+        speed = spawner.GetComponent<enemySpawner>().speed;
+        if (gameObject.tag == "Miniboss")
+        {
+            health *= 2;
+        }
 		//Tells the spawner that there is an enemy active
 		spawner.gameObject.SendMessage("enemyIsAlive");
 		levels = GameObject.Find("LevelController").GetComponent<levelController>();

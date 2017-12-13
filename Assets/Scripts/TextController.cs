@@ -29,7 +29,12 @@ public class TextController : MonoBehaviour {
 			enemyLetter = GameObject.FindWithTag("Enemy").GetComponent<enemyName>().firstLetter;
 			enemyLetterCaps = GameObject.FindWithTag("Enemy").GetComponent<enemyName>().firstLetterAlt;
 		}
-	}
+        if (GameObject.FindWithTag("Miniboss") is GameObject)
+        {
+            enemyLetter = GameObject.FindWithTag("Miniboss").GetComponent<enemyName>().firstLetter;
+            enemyLetterCaps = GameObject.FindWithTag("Miniboss").GetComponent<enemyName>().firstLetterAlt;
+        }
+    }
 
 	void addToString() {
 		foreach (char c in Input.inputString) {
