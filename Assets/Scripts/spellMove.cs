@@ -25,6 +25,7 @@ public class spellMove : MonoBehaviour {
 	}
 
 	public void death() {
+        Debug.Log("CALLED DEATH");
 		Destroy(gameObject);
 	}
 

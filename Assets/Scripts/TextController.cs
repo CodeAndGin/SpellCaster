@@ -46,7 +46,7 @@ public class TextController : MonoBehaviour {
 		if (s == "fireball" || s == "Fireball") {
 			spell = Instantiate(fire, transform.position, Quaternion.identity) as GameObject;
 		} else if (s == "icicle" || s == "Icicle") {
-			spell = Instantiate(ice, transform.position, Quaternion.identity) as GameObject;
+			spell = Instantiate(ice, transform.position, ice.transform.rotation) as GameObject;
 		} else if (s == "lightning" || s == "Lightning"){
 			Vector3 pos = new Vector3(transform.position.x + 7.5f, transform.position.y, transform.position.z);
 			spell = Instantiate(lightning, pos, Quaternion.identity) as GameObject;
