@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class playerController : MonoBehaviour {
 	public GameObject spawner;
+	public GameObject eSpawner;
     public int hp;
     public GameObject heart;
     public GameObject newHeart;
@@ -12,6 +13,7 @@ public class playerController : MonoBehaviour {
         hp = 2;
         hearts();
 		spawner = GameObject.Find("PlayerSpawner");
+		eSpawner = GameObject.Find("EnemySpawner");
 		spawner.gameObject.SendMessage("playerIsAlive");
 	}
 
@@ -30,6 +32,7 @@ public class playerController : MonoBehaviour {
 
 	void death() {
 		spawner.gameObject.SendMessage("playerIsDead"); //tells the spawner that the player dies
+		eSpawner.gameObject.SendMessage("slowDown"); //tell enemies to reset speed
 		Destroy(gameObject);	//kills the player
 	}
 

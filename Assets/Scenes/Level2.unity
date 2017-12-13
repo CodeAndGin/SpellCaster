@@ -153,6 +153,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1743560154516618, guid: f6a8b0ba57b094643bcb7d7333546db4,
         type: 2}
+    - target: {fileID: 82940767674614880, guid: 4b1cedea3c014d54ab9681d8fc20d789,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1cedea3c014d54ab9681d8fc20d789, type: 2}
   m_IsPrefabParent: 0
@@ -262,6 +267,7 @@ MonoBehaviour:
   miniboss: {fileID: 1988002060389948, guid: e078a859a5926144abe480f091ef9207, type: 2}
   enemyNumber: 0
   maxEnemies: 0
+  speed: 1
 --- !u!4 &245311847
 Transform:
   m_ObjectHideFlags: 0
