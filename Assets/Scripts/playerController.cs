@@ -10,7 +10,7 @@ public class playerController : MonoBehaviour {
     public GameObject newHeart;
 	// Use this for initialization
 	void Start () {
-        hp = 2;
+        hp = 4;
         hearts();
 		spawner = GameObject.Find("PlayerSpawner");
 		eSpawner = GameObject.Find("EnemySpawner");
@@ -38,7 +38,7 @@ public class playerController : MonoBehaviour {
 
     void hearts(){
         for (int i=0; i<hp; i++){
-            newHeart = Instantiate(heart, new Vector3(-i+-11,1.61f,109.8f), Quaternion.identity) as GameObject;
+            newHeart = Instantiate(heart, new Vector3(-i+-10.5f,-3.0f,109.8f), Quaternion.identity) as GameObject;
         }
     }
 
