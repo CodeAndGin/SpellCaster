@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class playerController : MonoBehaviour {
+
+	//spells
+	public GameObject fire;
+	public GameObject ice;
+	public GameObject lightning;
+	public GameObject shield;
+	private GameObject spell;
+
 	public GameObject spawner;
 	public GameObject eSpawner;
     public int hp;
@@ -41,5 +49,26 @@ public class playerController : MonoBehaviour {
             newHeart = Instantiate(heart, new Vector3(-i+-11,1.61f,109.8f), Quaternion.identity) as GameObject;
         }
     }
+
+	void castSpell (string s) {
+		if (s == "fireball" || s == "Fireball") {
+			spell = Instantiate(fire, transform.position, Quaternion.identity) as GameObject;
+		} else if (s == "icicle" || s == "Icicle") {
+			spell = Instantiate(ice, transform.position, ice.transform.rotation) as GameObject;
+		} else if (s == "lightning" || s == "Lightning"){
+			Vector3 pos = new Vector3(transform.position.x + 7.5f, transform.position.y, transform.position.z);
+			spell = Instantiate(lightning, pos, Quaternion.identity) as GameObject;
+		} else if (s == "shield" || s == "Shield") {
+			spell = Instantiate(shield, transform.position, Quaternion.identity) as GameObject;
+		} else {
+			Debug.Log("Not a match");
+		}
+		GameObject[] Letters = GameObject.FindGameObjectsWithTag("Letter"); //code adapted from user ZoogyBurger @ https://answers.unity.com/questions/1143629/destroy-multiple-gameobjects-with-tag-c.html
+		foreach (GameObject letter in Letters) {
+			GameObject.Destroy(letter);
+		}
+		GameObject.Find("LetterSpawnerController").gameObject.GetComponent<TextController>().currentLetterSpawner = 0;
+
+	}
 
 }
