@@ -8,7 +8,6 @@ public class gameStateController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		paused = false;
-		DontDestroyOnLoad(gameObject);
 	}
 
 	// Update is called once per frame
