@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class gameStateController : MonoBehaviour {
 
+	public bool paused;
 	// Use this for initialization
 	void Start () {
+		paused = false;
 		DontDestroyOnLoad(gameObject);
 	}
 
@@ -18,8 +20,10 @@ public class gameStateController : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.Escape)) {
 			if (Time.timeScale == 1) {
 				Time.timeScale = 0;
+				paused = true;
 			} else if (Time.timeScale == 0) {
 				Time.timeScale = 1;
+				paused = false;
 			}
 		}
 	}

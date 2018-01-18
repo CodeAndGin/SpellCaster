@@ -6,6 +6,7 @@ using System;
 
 public class TextController : MonoBehaviour {
 
+	public gameStateController gameState;
 	public string typing;	//string to compare with spells
 
 	public int currentLetterSpawner = 0;
@@ -17,14 +18,17 @@ public class TextController : MonoBehaviour {
 	private bool playerAlive;
 
 	void Start () {
+		gameState = GameObject.Find("GameStateController").GetComponent<gameStateController>();
 		player = GameObject.FindWithTag("Player");
 		typing = "";
 	}
 
 	void Update () {
-		checkForPlayer();
-		addToString();
-		checkEnemyName();
+		if (!gameState.paused) {
+			checkForPlayer();
+			addToString();
+			checkEnemyName();
+		}
     }
 
 	void checkForPlayer() {

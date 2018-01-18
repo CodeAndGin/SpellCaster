@@ -18,7 +18,7 @@ public class playerController : MonoBehaviour {
     public GameObject newHeart;
 	// Use this for initialization
 	void Start () {
-        hp = 2;
+        hp = 4;
         hearts();
 		spawner = GameObject.Find("PlayerSpawner");
 		eSpawner = GameObject.Find("EnemySpawner");
