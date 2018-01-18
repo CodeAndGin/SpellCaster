@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 50405554023093810}
   - component: {fileID: 61366178490054044}
   - component: {fileID: 114078708684564232}
-  - component: {fileID: 114806245359220950}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -100,27 +99,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6477287d07da8cf44b7edb4acf5d11e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fire: {fileID: 1066063737991428, guid: 2f69d8cbe51014e4f8d5cbc7f35dd435, type: 2}
+  ice: {fileID: 1820028514283620, guid: eb0cce0e7dfe08e4a8ae654a8756b46b, type: 2}
+  lightning: {fileID: 1289186355915558, guid: f6a8b0ba57b094643bcb7d7333546db4, type: 2}
+  shield: {fileID: 1018647704215016, guid: 95ccebdda8ab0bf439b2f6f3a8c42450, type: 2}
   spawner: {fileID: 0}
   eSpawner: {fileID: 0}
   hp: 0
   heart: {fileID: 1099940532787056, guid: a0181284a2cbd9c4a97889e07034032f, type: 2}
   newHeart: {fileID: 0}
---- !u!114 &114806245359220950
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1933420560201542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc6470d56d708ee42884249e1c4a2645, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fire: {fileID: 1066063737991428, guid: 2f69d8cbe51014e4f8d5cbc7f35dd435, type: 2}
-  ice: {fileID: 1820028514283620, guid: eb0cce0e7dfe08e4a8ae654a8756b46b, type: 2}
-  lightning: {fileID: 1289186355915558, guid: f6a8b0ba57b094643bcb7d7333546db4, type: 2}
-  shield: {fileID: 1018647704215016, guid: 95ccebdda8ab0bf439b2f6f3a8c42450, type: 2}
-  typing: {fileID: 0}
 --- !u!212 &212305202802868690
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -130,7 +117,6 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -146,7 +132,6 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -164,4 +149,3 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
