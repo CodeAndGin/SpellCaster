@@ -15,7 +15,6 @@ public class enemyName : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		display = GameObject.Find("enemyTitle").GetComponent<Text>();;
 		names = new ArrayList();
 		names.Add("Fiend");
 		names.Add("Goblin");
@@ -31,17 +30,6 @@ public class enemyName : MonoBehaviour {
         {
             name = (string)names[2];
         }
-		//float rando = UnityEngine.Random.Range(0f, 1f);
-		//if (rando < 0.5) {
-		//	rando = (float)Math.Floor(rando);
-		//} else {
-		//	rando = (float)Math.Ceiling(rando);
-		//}
-		//int rand = (int)rando;
-		//name = (string)names[rand];
-		//firstLetterAlt = name[0];
-		//firstLetter = char.ToLower(firstLetterAlt);
-		display.text = name;
 	}
 
 	// Update is called once per frame
