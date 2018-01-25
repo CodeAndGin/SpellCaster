@@ -8,6 +8,7 @@ public class bossPath : MonoBehaviour {
     public GameObject enemyPreFab;
     private GameObject movingBoss;
     private int index;
+    public int health;
 
     // Use this for initialization
     void Start () {
@@ -18,7 +19,7 @@ public class bossPath : MonoBehaviour {
 
         for (int i = 0; i < transform.childCount; i++) //Loops through every child of the gameObject that the script is attached to. Then increments i by 1.
         {
-            waypoints.Add(transform.GetChild(i).gameObject.transform.position); //Adds the Vector3 position of the child of index i. 
+            waypoints.Add(transform.GetChild(i).gameObject.transform.position); //Adds the Vector3 position of the child of index i.
         }
         waypoints.Add(transform.position); //Adds the parents position to the array.
         index = 0; //Sets the index to 0.

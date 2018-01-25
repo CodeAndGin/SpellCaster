@@ -9,6 +9,7 @@ TagManager:
   - Shield
   - Miniboss
   - Letter
+  - MainBoss1
   layers:
   - Default
   - TransparentFX
