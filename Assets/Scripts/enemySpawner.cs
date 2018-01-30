@@ -33,7 +33,7 @@ public class enemySpawner : MonoBehaviour {
 	void Update () {
 		if (!enemyAlive && enemyNumber < maxEnemies) {
 			StartCoroutine("spawn");
-		} else if (!enemyAlive && enemyNumber == maxEnemies) {
+		} else if (!enemyAlive && enemyNumber >= maxEnemies) {
 			StartCoroutine("spawnMiniBoss");
 		} else if (enemyAlive) {
 			StopCoroutine("spawn");

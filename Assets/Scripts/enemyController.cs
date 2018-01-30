@@ -44,8 +44,10 @@ public class enemyController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D other) {
 		if (other.gameObject.tag == "Player") {
-			other.gameObject.SendMessage("damage");	//sends message to player to die.
-            death();
+            other.gameObject.SendMessage("damage");	//sends message to player to die.
+            //death();
+            speed = 0;
+            StartCoroutine("attack");
 		}
 	}
 
@@ -57,4 +59,13 @@ public class enemyController : MonoBehaviour {
 		}
 		Destroy(gameObject);
 	}
+
+    IEnumerator attack()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(2f);
+            GameObject.FindWithTag("Player").gameObject.SendMessage("damage");
+        }
+    }
 }

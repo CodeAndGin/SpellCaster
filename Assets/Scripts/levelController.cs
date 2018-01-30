@@ -32,4 +32,9 @@ public class levelController : MonoBehaviour {
 		SceneManager.LoadScene(levelName);
 		StopCoroutine("NextLevel");
 	}
+
+    public void startGame ()
+    {
+        SceneManager.LoadScene(1);
+    }
 }

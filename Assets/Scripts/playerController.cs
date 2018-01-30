@@ -32,10 +32,21 @@ public class playerController : MonoBehaviour {
         }
 	}
 
+    IEnumerator flashRed()
+    {
+        yield return new WaitForSeconds(0.0f);
+        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        renderer.color = new Color(0.8f, 0f, 0f, 1f);
+        yield return new WaitForSeconds(0.3f);
+        renderer.color = new Color(1f, 1f, 1f, 1f);
+        StopCoroutine("flashRed");
+    }
+
     void damage(){
         hp -= 1;
         Debug.Log("HEALTH: "+hp);
 		Destroy(GameObject.Find("heart(Clone)"));
+        StartCoroutine("flashRed");
     }
 
 	void death() {

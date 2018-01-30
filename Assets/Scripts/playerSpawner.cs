@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerSpawner : MonoBehaviour {
 
@@ -15,7 +16,7 @@ public class playerSpawner : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (playerAlive == false) {
-			StartCoroutine("spawn");
+			StartCoroutine("Reset");
 		}
 		else if (playerAlive == true) StopCoroutine("spawn");
 	}
@@ -28,8 +29,8 @@ public class playerSpawner : MonoBehaviour {
 		playerAlive = true;
 	}
 
-	IEnumerator spawn() {
-		yield return new WaitForSeconds(3.0f);	//waits 3 seconds before the next line is called
-		makeNewPlayer = Instantiate(newPlayer, transform.position, Quaternion.identity) as GameObject;
+	IEnumerator Reset() {
+		yield return new WaitForSeconds(3.0f);  //waits 3 seconds before the next line is called
+        SceneManager.LoadScene(0);
 	}
 }
