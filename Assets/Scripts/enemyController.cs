@@ -11,6 +11,7 @@ public class enemyController : MonoBehaviour {
 	private levelController levels;
 	//To tell the spawner if the enemy had died
 	private GameObject spawner;
+    bool played = false;
 
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
@@ -52,13 +53,28 @@ public class enemyController : MonoBehaviour {
 	}
 
 	void death() {
-		spawner.gameObject.SendMessage("enemyIsDead");
-		spawner.gameObject.SendMessage("speedUp");
+        speed = 0;
 		if (gameObject.tag == "Miniboss") {
 			levels.gameObject.SendMessage("nLevel");
 		}
-		Destroy(gameObject);
+
+        if (played == false) {
+            GetComponent<AudioSource>().volume = 0.5f;
+            GetComponent<AudioSource>().Play();
+            played = true;
+        }
+        StartCoroutine("deathSound");
+        
 	}
+
+    IEnumerator deathSound()
+    {
+        yield return new WaitForSeconds(2f);
+        spawner.gameObject.SendMessage("enemyIsDead");
+        spawner.gameObject.SendMessage("speedUp");
+        Destroy(gameObject);
+        StopCoroutine("deathSound");
+    }
 
     IEnumerator attack()
     {
