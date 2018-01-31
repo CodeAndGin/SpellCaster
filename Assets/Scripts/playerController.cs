@@ -16,6 +16,8 @@ public class playerController : MonoBehaviour {
     public int hp;
     public GameObject heart;
     public GameObject newHeart;
+    public AudioSource deathNoise;
+
 	// Use this for initialization
 	void Start () {
         hp = 4;
@@ -43,6 +45,8 @@ public class playerController : MonoBehaviour {
     }
 
     void damage(){
+        deathNoise.volume = 1;
+        deathNoise.Play();
         hp -= 1;
         Debug.Log("HEALTH: "+hp);
 		Destroy(GameObject.Find("heart(Clone)"));
