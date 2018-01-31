@@ -33,11 +33,13 @@ public class enemySpawner : MonoBehaviour {
 	void Update () {
 		if (!enemyAlive && enemyNumber < maxEnemies) {
 			StartCoroutine("spawn");
-		} else if (!enemyAlive && enemyNumber >= maxEnemies) {
-			StartCoroutine("spawnMiniBoss");
+		} else if (!enemyAlive && enemyNumber == maxEnemies) {
+			StartCoroutine("spawnBoss");
+			//StartCoroutine("spawnMiniBoss");
 		} else if (enemyAlive) {
 			StopCoroutine("spawn");
-			StopCoroutine("spawnMiniBoss");
+			// StopCoroutine("spawnMiniBoss");
+			StopCoroutine("spawnBoss");
 		}
 	}
 
@@ -59,6 +61,13 @@ public class enemySpawner : MonoBehaviour {
 		yield return new WaitForSeconds(3.0f);
 		newEnemy = Instantiate(miniboss, transform.position, Quaternion.identity) as GameObject;
 		enemyNumber ++;
+	}
+
+	IEnumerator spawnBoss() {
+		yield return new WaitForSeconds(3.0f);
+		GameObject.Find("Boss Path/BossPathStart").gameObject.SendMessage("spawner");
+		enemyNumber ++;
+		enemyIsAlive();
 	}
 
 	void speedUp () {

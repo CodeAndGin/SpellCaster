@@ -24,12 +24,23 @@ public class spellMove : MonoBehaviour {
 		enemy.gameObject.SendMessage("damage");
 	}
 
+	public void damage() {
+		death();
+	}
+
 	public void death() {
-        Debug.Log("CALLED DEATH");
 		Destroy(gameObject);
 	}
 
 	public void decay() {
 		Destroy(gameObject, 5.0f);
+	}
+
+	void OnTriggerEnter2D(Collider2D other) {
+			//tells whatever trigger touches it to do the "playerInteraction" function
+		if (other.gameObject.tag == "EnemyProjectile") {
+			other.gameObject.SendMessage("playerInteraction", gameObject);
+			other.gameObject.SendMessage("death"); //destroys Projectiles
+		}
 	}
 }
