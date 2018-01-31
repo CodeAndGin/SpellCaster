@@ -9,7 +9,11 @@ TagManager:
   - Shield
   - Miniboss
   - Letter
+<<<<<<< HEAD
   - enemyNameLetter
+=======
+  - MainBoss1
+>>>>>>> origin/adding_boss
   layers:
   - Default
   - TransparentFX

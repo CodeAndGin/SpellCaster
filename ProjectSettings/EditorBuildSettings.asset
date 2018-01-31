@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/menu.unity
     guid: a9361fb6c936c6d40b0996d20a9a16fe
   - enabled: 1
+=======
+>>>>>>> origin/adding_boss
     path: Assets/Scenes/Level1.unity
     guid: 6eaa6e1f2521d044abb18a355fccf683
   - enabled: 1
@@ -43,4 +46,8 @@ EditorBuildSettings:
     guid: 1a759fe86a123bc46990d1ea5ab1b6e4
   - enabled: 1
     path: Assets/Scenes/Level12.unity
+<<<<<<< HEAD
     guid: a22fb79ea85ddb846b82fc35084591a4
+=======
+    guid: 00000000000000000000000000000000
+>>>>>>> origin/adding_boss

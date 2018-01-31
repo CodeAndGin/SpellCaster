@@ -793,6 +793,7 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
     - target: {fileID: 4915458188153480, guid: 067b4d8ce612f3b45919fbd986df3d84, type: 2}
       propertyPath: m_LocalPosition.x
       value: 19.8
@@ -802,21 +803,45 @@ Prefab:
       value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 4915458188153480, guid: 067b4d8ce612f3b45919fbd986df3d84, type: 2}
+=======
+    - target: {fileID: 4508696476883866, guid: 504a45c3260cafa439401afc654169c2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508696476883866, guid: 504a45c3260cafa439401afc654169c2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -7.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508696476883866, guid: 504a45c3260cafa439401afc654169c2, type: 2}
+>>>>>>> origin/adding_boss
       propertyPath: m_LocalPosition.z
       value: 164.6
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 4915458188153480, guid: 067b4d8ce612f3b45919fbd986df3d84, type: 2}
+=======
+    - target: {fileID: 4508696476883866, guid: 504a45c3260cafa439401afc654169c2, type: 2}
+>>>>>>> origin/adding_boss
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 4915458188153480, guid: 067b4d8ce612f3b45919fbd986df3d84, type: 2}
+=======
+    - target: {fileID: 4508696476883866, guid: 504a45c3260cafa439401afc654169c2, type: 2}
+>>>>>>> origin/adding_boss
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 4915458188153480, guid: 067b4d8ce612f3b45919fbd986df3d84, type: 2}
+=======
+    - target: {fileID: 4508696476883866, guid: 504a45c3260cafa439401afc654169c2, type: 2}
+>>>>>>> origin/adding_boss
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 4915458188153480, guid: 067b4d8ce612f3b45919fbd986df3d84, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -865,6 +890,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4508696476883866, guid: 504a45c3260cafa439401afc654169c2, type: 2}
       propertyPath: m_RootOrder
+=======
+    - target: {fileID: 4508696476883866, guid: 504a45c3260cafa439401afc654169c2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508696476883866, guid: 504a45c3260cafa439401afc654169c2, type: 2}
+      propertyPath: m_RootOrder
+>>>>>>> origin/adding_boss
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
