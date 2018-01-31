@@ -823,6 +823,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4097825193281940, guid: 828ed8dad0a195d478dc1979e98fdc0c, type: 2}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -869,6 +870,12 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 067b4d8ce612f3b45919fbd986df3d84, type: 2}
+=======
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 828ed8dad0a195d478dc1979e98fdc0c, type: 2}
+>>>>>>> origin/SFX
   m_IsPrefabParent: 0
 --- !u!1 &1968266439
 GameObject:
