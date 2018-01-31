@@ -10,6 +10,9 @@ public class ufoBossController : MonoBehaviour {
 	public GameObject projectilePrefab;
     private GameObject movingProjectile;
 	public float fireRate = 8f;
+    public AudioSource deathAudio;
+    public AudioSource aliveNoise;
+    bool playOnce = false;
 
 	// Use this for initialization
 	void Start () {
@@ -35,13 +38,13 @@ public class ufoBossController : MonoBehaviour {
 	}
 
 	void death() {
-        // if (played == false) {
-        //     GetComponent<AudioSource>().volume = 0.5f;
-        //     GetComponent<AudioSource>().Play();
-        //     played = true;
-        // }
-
-		Time.timeScale = 0;
+        aliveNoise.Stop();
+        if (playOnce == false)
+        {
+            deathAudio.volume = 0.5f;
+            deathAudio.Play();
+        }
+        Time.timeScale = 0;
 		GameObject.Find("Boss Path/BossPathStart").GetComponent<bossPath>().moveSpeed = 0;
         StartCoroutine("deathSound");
 
