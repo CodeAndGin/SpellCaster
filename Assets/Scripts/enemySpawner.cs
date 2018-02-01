@@ -26,7 +26,7 @@ public class enemySpawner : MonoBehaviour {
         newEnemy = Instantiate(enemies[(int)Math.Floor((double)UnityEngine.Random.Range(0,2))], transform.position, Quaternion.identity) as GameObject;
 		levels = GameObject.Find("LevelController").GetComponent<levelController>();
 		enemyNumber = 0;
-		maxEnemies = levels.level*5;
+		//maxEnemies = levels.level*5;
 	}
 
 	// Update is called once per frame

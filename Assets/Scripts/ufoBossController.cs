@@ -43,6 +43,7 @@ public class ufoBossController : MonoBehaviour {
         {
             deathAudio.volume = 0.5f;
             deathAudio.Play();
+			playOnce = true;
         }
         Time.timeScale = 0;
 		GameObject.Find("Boss Path/BossPathStart").GetComponent<bossPath>().moveSpeed = 0;
