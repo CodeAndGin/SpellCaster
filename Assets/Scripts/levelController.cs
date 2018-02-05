@@ -8,12 +8,25 @@ public class levelController : MonoBehaviour {
 	private string levelName;
 	public int level;
 	public Text complete;
+    bool textFound = false;
 	// Use this for initialization
 	void Start () {
 		DontDestroyOnLoad(gameObject);
 		levelName = "level";
 		complete = GameObject.Find("LevelCompleteText").GetComponent<Text>();
 	}
+
+    void Update()
+    {
+        if (GameObject.Find("LevelCompleteText") != null && !textFound) {
+            complete = GameObject.Find("LevelCompleteText").GetComponent<Text>();
+            textFound = true;
+        }
+        else
+        {
+            textFound = false;
+        }
+    }
 
 	void nLevel() {
 		StartCoroutine("NextLevel");

@@ -17,6 +17,7 @@ public class enemySpawner : MonoBehaviour {
 
 	public float speed = 2;
     public int health = 1;
+    bool levelup = true;
 
 	// Use this for initialization
 	void Start () {
@@ -31,16 +32,26 @@ public class enemySpawner : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (!enemyAlive && enemyNumber < maxEnemies) {
-			StartCoroutine("spawn");
-		} else if (!enemyAlive && enemyNumber == maxEnemies) {
-			StartCoroutine("spawnBoss");
-			//StartCoroutine("spawnMiniBoss");
-		} else if (enemyAlive) {
-			StopCoroutine("spawn");
-			// StopCoroutine("spawnMiniBoss");
-			StopCoroutine("spawnBoss");
-		}
+        if (!enemyAlive && enemyNumber < maxEnemies)
+        {
+            StartCoroutine("spawn");
+        }
+        else if ((!enemyAlive && enemyNumber == maxEnemies) && levels.level == 1 && levelup)
+        {
+            levels.gameObject.SendMessage("nLevel");
+            levelup = false;
+        }
+        else if (!enemyAlive && enemyNumber == maxEnemies)
+        {
+            StartCoroutine("spawnBoss");
+            //StartCoroutine("spawnMiniBoss");
+        }
+        else if (enemyAlive)
+        {
+            StopCoroutine("spawn");
+            // StopCoroutine("spawnMiniBoss");
+            StopCoroutine("spawnBoss");
+        }
 	}
 
 	void enemyIsAlive () {
