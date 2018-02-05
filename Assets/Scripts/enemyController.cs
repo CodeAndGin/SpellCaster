@@ -95,7 +95,7 @@ public class enemyController : MonoBehaviour {
         while (true)
         {
 			if (health < 0) {
-				StopCoroutine(attack);
+				StopCoroutine("attack");
 			}
             yield return new WaitForSeconds(2f);
             GameObject.FindWithTag("Player").gameObject.SendMessage("damage");

@@ -21,4 +21,8 @@ public class lightningController : MonoBehaviour {
 	public void decay() {
 		Destroy(gameObject, 1.0f);
 	}
+
+	void death () {
+		Destroy(gameObject);
+	}
 }

@@ -43,6 +43,11 @@ public class shieldController : MonoBehaviour {
 			other.gameObject.SendMessage("death"); //destroys Projectiles
 			damage();
 		}
+
+		if  (gameObject.tag == "EnemyShield" && other.gameObject.tag == "Lightning") {
+			damage();
+			damage();
+		}
 	}
 
 	void powerUp () {

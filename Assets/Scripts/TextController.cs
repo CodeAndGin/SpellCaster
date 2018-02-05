@@ -71,12 +71,15 @@ public class TextController : MonoBehaviour {
 		letter += enemyLetter;
 		string letterBig = "";
 		letterBig += enemyLetterCaps;
-		if (spell.Contains(letter) || spell.Contains(letterBig)) {
-			GameObject.FindWithTag("Enemy").gameObject.SendMessage("shieldBuff");
+		if ((spell.Contains(letter) || spell.Contains(letterBig)) && GameObject.FindWithTag("Enemy") is GameObject) {
+			if (GameObject.FindWithTag("EnemyShield") is GameObject) {
+				GameObject.FindWithTag("EnemyShield").gameObject.SendMessage("powerUp");
+			} else GameObject.FindWithTag("Enemy").gameObject.SendMessage("shieldBuff");
 			GameObject[] Letters = GameObject.FindGameObjectsWithTag("Letter"); //code adapted from user ZoogyBurger @ https://answers.unity.com/questions/1143629/destroy-multiple-gameobjects-with-tag-c.html
 			foreach (GameObject letters in Letters) {
 				GameObject.Destroy(letters);
 			}
+			currentLetterSpawner = 0;
 		} else {
 			player.gameObject.SendMessage("castSpell", spell);
 		}
