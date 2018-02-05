@@ -63,7 +63,7 @@ public class enemySpawner : MonoBehaviour {
 
 	IEnumerator spawn() {
 		yield return new WaitForSeconds(3.0f);
-        newEnemy = Instantiate(enemies[(int)Math.Floor((double)UnityEngine.Random.Range(0, 2))], transform.position, Quaternion.identity) as GameObject;
+        newEnemy = Instantiate(enemies[(int)Math.Floor((double)UnityEngine.Random.Range(0, 3))], transform.position, Quaternion.identity) as GameObject;
         enemyNumber++;
 	}
 

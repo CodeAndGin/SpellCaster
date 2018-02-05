@@ -42,6 +42,7 @@ public class levelController : MonoBehaviour {
 		level++;
 		levelName = "Level" + level;
 		SceneManager.LoadScene(levelName);
+        Time.timeScale = 1;
 		StopCoroutine("NextLevel");
 	}
 

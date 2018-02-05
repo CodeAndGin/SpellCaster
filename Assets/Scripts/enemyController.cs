@@ -19,10 +19,6 @@ public class enemyController : MonoBehaviour {
 
         health = spawner.GetComponent<enemySpawner>().health;
         speed = spawner.GetComponent<enemySpawner>().speed;
-        if (gameObject.tag == "Miniboss")
-        {
-            health *= 2;
-        }
 		//Tells the spawner that there is an enemy active
 		spawner.gameObject.SendMessage("enemyIsAlive");
 		levels = GameObject.Find("LevelController").GetComponent<levelController>();
@@ -54,9 +50,6 @@ public class enemyController : MonoBehaviour {
 
 	void death() {
         speed = 0;
-		if (gameObject.tag == "Miniboss") {
-			levels.gameObject.SendMessage("nLevel");
-		}
 
         if (played == false) {	//yeah so the sound is being played in death() and the death is happening in deathSound() dont ask pls;
             GetComponent<AudioSource>().volume = 0.5f;
