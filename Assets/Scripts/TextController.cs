@@ -57,12 +57,28 @@ public class TextController : MonoBehaviour {
 	void addToString() {
 		foreach (char c in Input.inputString) {
 			if (Input.GetKeyDown(KeyCode.Return)) {
-				player.gameObject.SendMessage("castSpell", typing);
+				checkSpellForEnemyBuff(typing);
 				typing = "";
 			} else {
 				typing = typing + c;
 				currentLetterSpawner++;
 			}
+		}
+	}
+
+	void checkSpellForEnemyBuff (string spell) {
+		string letter = "";
+		letter += enemyLetter;
+		string letterBig = "";
+		letterBig += enemyLetterCaps;
+		if (spell.Contains(letter) || spell.Contains(letterBig)) {
+			GameObject.FindWithTag("Enemy").gameObject.SendMessage("shieldBuff");
+			GameObject[] Letters = GameObject.FindGameObjectsWithTag("Letter"); //code adapted from user ZoogyBurger @ https://answers.unity.com/questions/1143629/destroy-multiple-gameobjects-with-tag-c.html
+			foreach (GameObject letters in Letters) {
+				GameObject.Destroy(letters);
+			}
+		} else {
+			player.gameObject.SendMessage("castSpell", spell);
 		}
 	}
 }

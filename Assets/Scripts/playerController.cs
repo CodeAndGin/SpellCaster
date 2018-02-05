@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class playerController : MonoBehaviour {
-
+	public bool isShielded = false;
 	//spells
 	public GameObject fire;
 	public GameObject ice;
@@ -45,12 +45,14 @@ public class playerController : MonoBehaviour {
     }
 
     void damage(){
-        deathNoise.volume = 1;
-        deathNoise.Play();
-        hp -= 1;
-        Debug.Log("HEALTH: "+hp);
-		Destroy(GameObject.Find("heart(Clone)"));
-        StartCoroutine("flashRed");
+		if (!isShielded) {
+	        deathNoise.volume = 1;
+	        deathNoise.Play();
+	        hp -= 1;
+	        Debug.Log("HEALTH: "+hp);
+			Destroy(GameObject.Find("heart(Clone)"));
+	        StartCoroutine("flashRed");
+		}
     }
 
 	void death() {
@@ -74,7 +76,11 @@ public class playerController : MonoBehaviour {
 			Vector3 pos = new Vector3(transform.position.x + 7.5f, transform.position.y, transform.position.z);
 			spell = Instantiate(lightning, pos, Quaternion.identity) as GameObject;
 		} else if (s == "shield" || s == "Shield") {
-			spell = Instantiate(shield, transform.position, Quaternion.identity) as GameObject;
+			if (GameObject.FindWithTag("playerShield") is GameObject) {
+				GameObject.FindWithTag("playerShield").gameObject.SendMessage("powerUp");
+			} else {
+				spell = Instantiate(shield, transform.position, Quaternion.identity) as GameObject;
+			}
 		} else {
 			Debug.Log("Not a match");
 		}

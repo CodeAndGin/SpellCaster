@@ -9,8 +9,9 @@ TagManager:
   - enemyNameLetter
   - Letter
   - Projectile
-  - Shield
   - EnemyProjectile
+  - playerShield
+  - EnemyShield
   layers:
   - Default
   - TransparentFX

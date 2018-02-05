@@ -10,7 +10,6 @@ public class spellMove : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
-		if (gameObject.tag == "Shield") decay();
 	}
 
 	// Update is called once per frame
