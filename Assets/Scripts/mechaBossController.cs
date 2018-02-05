@@ -5,6 +5,7 @@ using UnityEngine;
 public class mechaBossController : MonoBehaviour {
 
     private Animator anim;
+    public int speed;
     //bool isWalking;
 
 	// Use this for initialization
@@ -21,10 +22,9 @@ public class mechaBossController : MonoBehaviour {
     {
         yield return new WaitForSeconds(3.0f);
         anim.SetBool("isWalking", true);
-        //Debug.Log("true: " + isWalking);
-        yield return new WaitForSeconds(3.0f);
+        transform.Translate(-Vector3.right * Time.deltaTime * speed);
+        yield return new WaitForSeconds(2f);
         anim.SetBool("isWalking", false);
-        //Debug.Log("false: " + isWalking);
         StopCoroutine("attacking");
     }
 }
