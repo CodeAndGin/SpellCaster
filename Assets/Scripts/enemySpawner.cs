@@ -8,7 +8,7 @@ public class enemySpawner : MonoBehaviour {
 	public bool enemyAlive;
 	public GameObject enemy1;
     public GameObject enemy2;
-    public GameObject miniboss;
+    public GameObject enemy3;
     public GameObject[] enemies;
 	private GameObject newEnemy;
 	private levelController levels;
@@ -21,9 +21,10 @@ public class enemySpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        enemies = new GameObject[2];
+        enemies = new GameObject[3];
         enemies[0]=enemy1;
         enemies[1]=enemy2;
+        enemies[2] = enemy3;
         newEnemy = Instantiate(enemies[(int)Math.Floor((double)UnityEngine.Random.Range(0,2))], transform.position, Quaternion.identity) as GameObject;
 		levels = GameObject.Find("LevelController").GetComponent<levelController>();
 		enemyNumber = 0;
@@ -44,12 +45,10 @@ public class enemySpawner : MonoBehaviour {
         else if (!enemyAlive && enemyNumber == maxEnemies)
         {
             StartCoroutine("spawnBoss");
-            //StartCoroutine("spawnMiniBoss");
         }
         else if (enemyAlive)
         {
             StopCoroutine("spawn");
-            // StopCoroutine("spawnMiniBoss");
             StopCoroutine("spawnBoss");
         }
 	}
@@ -66,12 +65,6 @@ public class enemySpawner : MonoBehaviour {
 		yield return new WaitForSeconds(3.0f);
         newEnemy = Instantiate(enemies[(int)Math.Floor((double)UnityEngine.Random.Range(0, 2))], transform.position, Quaternion.identity) as GameObject;
         enemyNumber++;
-	}
-
-	IEnumerator spawnMiniBoss() {
-		yield return new WaitForSeconds(3.0f);
-		newEnemy = Instantiate(miniboss, transform.position, Quaternion.identity) as GameObject;
-		enemyNumber ++;
 	}
 
 	IEnumerator spawnBoss() {
