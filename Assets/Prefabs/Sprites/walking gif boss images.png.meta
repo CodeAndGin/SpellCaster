@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 1ffc2986f5c3f7748a81c3709a136533
-timeCreated: 1517333633
+timeCreated: 1517852026
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,6 +12,16 @@ TextureImporter:
     21300010: walking gif boss images_5
     21300012: walking gif boss images_6
     21300014: walking gif boss images_7
+    21300016: walking gif boss images_8
+    21300018: walking gif boss images_9
+    21300020: walking gif boss images_10
+    21300022: walking gif boss images_11
+    21300024: walking gif boss images_12
+    21300026: walking gif boss images_13
+    21300028: walking gif boss images_14
+    21300030: walking gif boss images_15
+    21300032: walking gif boss images_16
+    21300034: walking gif boss images_17
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -83,10 +93,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 210
-        width: 220
+        width: 222
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -94,12 +104,12 @@ TextureImporter:
       name: walking gif boss images_1
       rect:
         serializedVersion: 2
-        x: 220
+        x: 222
         y: 210
-        width: 220
+        width: 222
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -107,12 +117,12 @@ TextureImporter:
       name: walking gif boss images_2
       rect:
         serializedVersion: 2
-        x: 440
+        x: 444
         y: 210
-        width: 220
+        width: 222
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -120,12 +130,12 @@ TextureImporter:
       name: walking gif boss images_3
       rect:
         serializedVersion: 2
-        x: 660
+        x: 666
         y: 210
-        width: 220
+        width: 222
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -135,10 +145,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 220
+        width: 222
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -146,12 +156,12 @@ TextureImporter:
       name: walking gif boss images_5
       rect:
         serializedVersion: 2
-        x: 220
+        x: 222
         y: 0
-        width: 220
+        width: 222
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -159,12 +169,12 @@ TextureImporter:
       name: walking gif boss images_6
       rect:
         serializedVersion: 2
-        x: 440
+        x: 444
         y: 0
-        width: 220
+        width: 222
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -172,12 +182,12 @@ TextureImporter:
       name: walking gif boss images_7
       rect:
         serializedVersion: 2
-        x: 660
+        x: 666
         y: 0
-        width: 220
+        width: 222
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 43479fa8581582944b92fa5ba41cf444
-timeCreated: 1517335263
+timeCreated: 1517852152
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -85,10 +85,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 210
-        width: 221
+        width: 220
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -96,12 +96,12 @@ TextureImporter:
       name: idle boss sprite sheet_1
       rect:
         serializedVersion: 2
-        x: 221
+        x: 220
         y: 210
-        width: 221
+        width: 220
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -109,12 +109,12 @@ TextureImporter:
       name: idle boss sprite sheet_2
       rect:
         serializedVersion: 2
-        x: 442
+        x: 440
         y: 210
-        width: 221
+        width: 220
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -122,12 +122,12 @@ TextureImporter:
       name: idle boss sprite sheet_3
       rect:
         serializedVersion: 2
-        x: 663
+        x: 660
         y: 210
-        width: 221
+        width: 220
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -135,12 +135,12 @@ TextureImporter:
       name: idle boss sprite sheet_4
       rect:
         serializedVersion: 2
-        x: 884
+        x: 880
         y: 210
-        width: 221
+        width: 220
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -150,10 +150,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 221
+        width: 220
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -161,12 +161,12 @@ TextureImporter:
       name: idle boss sprite sheet_6
       rect:
         serializedVersion: 2
-        x: 221
+        x: 220
         y: 0
-        width: 221
+        width: 220
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -174,12 +174,12 @@ TextureImporter:
       name: idle boss sprite sheet_7
       rect:
         serializedVersion: 2
-        x: 442
+        x: 440
         y: 0
-        width: 221
+        width: 220
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -187,12 +187,12 @@ TextureImporter:
       name: idle boss sprite sheet_8
       rect:
         serializedVersion: 2
-        x: 663
+        x: 660
         y: 0
-        width: 221
+        width: 220
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -200,12 +200,12 @@ TextureImporter:
       name: idle boss sprite sheet_9
       rect:
         serializedVersion: 2
-        x: 884
+        x: 880
         y: 0
-        width: 221
+        width: 220
         height: 210
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
