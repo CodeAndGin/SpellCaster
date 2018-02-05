@@ -6,6 +6,7 @@ using UnityEngine;
 public class enemySpawner : MonoBehaviour {
 
 	public bool enemyAlive;
+    public GameObject boss3;
 	public GameObject enemy1;
     public GameObject enemy2;
     public GameObject enemy3;
@@ -69,10 +70,19 @@ public class enemySpawner : MonoBehaviour {
 
 	IEnumerator spawnBoss() {
 		yield return new WaitForSeconds(3.0f);
-		GameObject.Find("Boss Path/BossPathStart").gameObject.SendMessage("spawner");
-		enemyNumber ++;
-		enemyIsAlive();
-	}
+        if (levels.level == 2)
+        {
+            GameObject.Find("Boss Path/BossPathStart").gameObject.SendMessage("spawner");
+            enemyNumber++;
+            enemyIsAlive();
+        }
+        if (levels.level == 3)
+        {
+            newEnemy = Instantiate(boss3, transform.position, Quaternion.identity) as GameObject;
+            enemyNumber++;
+            enemyIsAlive();
+        }
+    }
 
 	void speedUp () {
 		speed += 0.5f;
