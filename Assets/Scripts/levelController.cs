@@ -11,7 +11,6 @@ public class levelController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		DontDestroyOnLoad(gameObject);
-		level = 1;
 		levelName = "level";
 		complete = GameObject.Find("LevelCompleteText").GetComponent<Text>();
 	}
@@ -22,11 +21,11 @@ public class levelController : MonoBehaviour {
 
 	IEnumerator NextLevel() {	/*level is changing here*/
 		complete.text = "LEVEL " + level + " COMPLETE!\n Next Level in " + 3;
-		yield return new WaitForSeconds(1.0f);
+		yield return new WaitForSecondsRealtime(1.0f);
 		complete.text = "LEVEL " + level + " COMPLETE!\n Next Level in " + 2;
-		yield return new WaitForSeconds(1.0f);
+		yield return new WaitForSecondsRealtime(1.0f);
 		complete.text = "LEVEL " + level + " COMPLETE!\n Next Level in " + 1;
-		yield return new WaitForSeconds(1.0f);
+		yield return new WaitForSecondsRealtime(1.0f);
 		level++;
 		levelName = "Level" + level;
 		SceneManager.LoadScene(levelName);

@@ -8,14 +8,15 @@ public class bossPath : MonoBehaviour {
     public GameObject enemyPreFab;
     private GameObject movingBoss;
     private int index;
-    public int health;
+    public float moveSpeed = 7f;
+
+    public bool spawned = false;
 
     // Use this for initialization
     void Start () {
         waypoints = new List<Vector3>();
 
-        movingBoss = Instantiate(enemyPreFab, transform.position, Quaternion.identity) as GameObject;
-        movingBoss.transform.position = gameObject.transform.position;
+
 
         for (int i = 0; i < transform.childCount; i++) //Loops through every child of the gameObject that the script is attached to. Then increments i by 1.
         {
@@ -27,22 +28,31 @@ public class bossPath : MonoBehaviour {
 
 
 // Update is called once per frame
-void Update()
-{
-    if (movingBoss.transform.position == waypoints[index]) //This checks whether the position of the enemy is equal to the current array index.
+    void Update()
     {
-        if (index == waypoints.Count - 1) //This checks whether the index variable is equal to 1 less than the array length
+      if (spawned) {
+        if (movingBoss.transform.position == waypoints[index]) //This checks whether the position of the enemy is equal to the current array index.
         {
-            index = 0; //Sets index to 0
+            if (index == waypoints.Count - 1) //This checks whether the index variable is equal to 1 less than the array length
+            {
+                index = 0; //Sets index to 0
+            }
+            else
+            {
+                index++; //Increases index by 1.
+            }
         }
         else
         {
-            index++; //Increases index by 1.
+            movingBoss.transform.position = Vector3.MoveTowards(movingBoss.transform.position, waypoints[index], moveSpeed * Time.deltaTime); //This makes the enemy move towards the current array index and sets the speed.
         }
+      }
     }
-    else
+
+    void spawner()
     {
-        movingBoss.transform.position = Vector3.MoveTowards(movingBoss.transform.position, waypoints[index], 7f * Time.deltaTime); //This makes the enemy move towards the current array index and sets the speed.
+      movingBoss = Instantiate(enemyPreFab, transform.position, Quaternion.identity) as GameObject;
+      movingBoss.transform.position = gameObject.transform.position;
+      spawned = true;
     }
-}
 }

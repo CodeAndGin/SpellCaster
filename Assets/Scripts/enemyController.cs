@@ -58,18 +58,18 @@ public class enemyController : MonoBehaviour {
 			levels.gameObject.SendMessage("nLevel");
 		}
 
-        if (played == false) {
+        if (played == false) {	//yeah so the sound is being played in death() and the death is happening in deathSound() dont ask pls;
             GetComponent<AudioSource>().volume = 0.5f;
             GetComponent<AudioSource>().Play();
             played = true;
         }
         StartCoroutine("deathSound");
-        
+
 	}
 
     IEnumerator deathSound()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f);
         spawner.gameObject.SendMessage("enemyIsDead");
         spawner.gameObject.SendMessage("speedUp");
         Destroy(gameObject);
