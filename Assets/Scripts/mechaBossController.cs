@@ -12,13 +12,16 @@ public class mechaBossController : MonoBehaviour {
     private GameObject spawner;
     private levelController levels;
 
+    public AudioSource walkNoise;
+    public AudioSource winningLine;
+
     // Use this for initialization
     void Start () {
         anim = GetComponent<Animator>();
 
         spawner = GameObject.Find("EnemySpawner");
         levels = GameObject.Find("LevelController").GetComponent<levelController>();
-
+        walkNoise.Play();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -39,9 +42,11 @@ public class mechaBossController : MonoBehaviour {
         Vector3 fist = new Vector3(gameObject.transform.position.x - 3f, -5.11f, 163.1f);
         yield return new WaitForSeconds(3.0f);
         anim.SetBool("isWalking", true);
+        walkNoise.UnPause();
         transform.Translate(-Vector3.right * Time.deltaTime);
         yield return new WaitForSeconds(2f);
         anim.SetBool("isWalking", false);
+        walkNoise.Pause();
         movingProjectile = Instantiate(projectilePrefab, fist, Quaternion.identity) as GameObject;
         StopCoroutine("attacking");
     }

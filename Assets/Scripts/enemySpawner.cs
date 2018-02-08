@@ -26,7 +26,7 @@ public class enemySpawner : MonoBehaviour {
         enemies[0]=enemy1;
         enemies[1]=enemy2;
         enemies[2] = enemy3;
-        newEnemy = Instantiate(enemies[(int)Math.Floor((double)UnityEngine.Random.Range(0,2))], transform.position, Quaternion.identity) as GameObject;
+        newEnemy = Instantiate(enemies[(int)Math.Floor((double)UnityEngine.Random.Range(0,3))], transform.position, Quaternion.identity) as GameObject;
 		levels = GameObject.Find("LevelController").GetComponent<levelController>();
 		enemyNumber = 0;
 		//maxEnemies = levels.level*5;
@@ -85,7 +85,7 @@ public class enemySpawner : MonoBehaviour {
     }
 
 	void speedUp () {
-		speed += 0.5f;
+		speed += 0.2f;
 	}
 
 	void slowDown () {
