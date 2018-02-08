@@ -46,6 +46,16 @@ public class mechaBossController : MonoBehaviour {
         StopCoroutine("attacking");
     }
 
+    IEnumerator flashRed()
+    {
+        yield return new WaitForSeconds(0.0f);
+        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        renderer.color = new Color(0.8f, 0f, 0f, 1f);
+        yield return new WaitForSeconds(0.3f);
+        renderer.color = new Color(1f, 1f, 1f, 1f);
+        StopCoroutine("flashRed");
+    }
+
     void death()
     {
         /*aliveNoise.Stop();
@@ -63,14 +73,15 @@ public class mechaBossController : MonoBehaviour {
     void damage()
     {
         health -= 1f; //to be called by other scripts to damage the enemy
+        StartCoroutine("flashRed");
     }
 
     IEnumerator deathSound()
     {
         yield return new WaitForSecondsRealtime(1.5f);
         spawner.gameObject.SendMessage("enemyIsDead");
-        
-        
+
+
         levels.gameObject.SendMessage("nLevel");
         Destroy(gameObject);
 

@@ -30,12 +30,23 @@ public class ufoBossController : MonoBehaviour {
 		fireRate /= 1.2f;
 		GameObject.Find("Boss Path/BossPathStart").GetComponent<bossPath>().moveSpeed *= 1.2f;
 		health -= 1f; //to be called by other scripts to damage the enemy
+		StartCoroutine("flashRed");
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
 		other.gameObject.SendMessage("enemyInteraction", gameObject);	//tells whatever trigger touches it to do the "enemyInteraction" function
 		if (other.gameObject.tag == "Projectile" || other.gameObject.tag == "Shield") other.gameObject.SendMessage("death"); //destroys Projectiles and shields
 	}
+
+	IEnumerator flashRed()
+    {
+        yield return new WaitForSeconds(0.0f);
+        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        renderer.color = new Color(0.8f, 0f, 0f, 1f);
+        yield return new WaitForSeconds(0.3f);
+        renderer.color = new Color(1f, 1f, 1f, 1f);
+        StopCoroutine("flashRed");
+    }
 
 	void death() {
         aliveNoise.Stop();
