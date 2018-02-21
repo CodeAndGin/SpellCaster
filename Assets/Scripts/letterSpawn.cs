@@ -52,6 +52,7 @@ public class letterSpawn : MonoBehaviour {
 
 	bool checkIfActive () {
 		if (controller.gameObject.GetComponent<TextController>().currentLetterSpawner == identity) {
+			Debug.Log("I, number " + identity + " am the current letter");
 			return true;
 		} else {
 			return false;
