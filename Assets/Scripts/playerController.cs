@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerController : MonoBehaviour {
 	public bool isShielded = false;
@@ -11,8 +12,6 @@ public class playerController : MonoBehaviour {
 	public GameObject shield;
 	private GameObject spell;
 
-	public GameObject spawner;
-	public GameObject eSpawner;
     public int hp;
     public GameObject heart;
     public GameObject newHeart;
@@ -22,9 +21,6 @@ public class playerController : MonoBehaviour {
 	void Start () {
         hp = 4;
         hearts();
-		spawner = GameObject.Find("PlayerSpawner");
-		eSpawner = GameObject.Find("EnemySpawner");
-		spawner.gameObject.SendMessage("playerIsAlive");
 	}
 
 	// Update is called once per frame
@@ -56,8 +52,7 @@ public class playerController : MonoBehaviour {
     }
 
 	void death() {
-		spawner.gameObject.SendMessage("playerIsDead"); //tells the spawner that the player dies
-		eSpawner.gameObject.SendMessage("slowDown"); //tell enemies to reset speed
+		StartCoroutine("Reset"); //Restarts the game
 		Destroy(gameObject);	//kills the player
 	}
 
@@ -98,6 +93,11 @@ public class playerController : MonoBehaviour {
 			other.gameObject.SendMessage("playerInteraction", gameObject);
 			other.gameObject.SendMessage("death"); //destroys Projectiles
 		}
+	}
+
+	IEnumerator Reset() {
+		yield return new WaitForSeconds(3.0f);  //waits 3 seconds before the next line is called
+        SceneManager.LoadScene(0);
 	}
 
 }

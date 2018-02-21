@@ -60,7 +60,16 @@ public class TextController : MonoBehaviour {
 				checkSpellForEnemyBuff(typing);
 				typing = "";
 			} else {
-				typing = typing + c;
+				string convert = "";
+				convert = convert + c;
+				convert = convert.ToLower();
+				/*
+					The lines above just convert any capsLocked keys to lower case so that spells
+					can still be cast no matter the arrangement of uppercase and lowercase letters in the
+					typing variable. The same lines are in the letterSpawn.cs script so that letters should
+					spawn without fail
+				*/
+				typing = typing + convert;
 				currentLetterSpawner++;
 			}
 		}

@@ -10,7 +10,7 @@ public class playerSpawner : MonoBehaviour {
 	private GameObject makeNewPlayer;
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 
 	// Update is called once per frame

@@ -60,7 +60,17 @@ public class letterSpawn : MonoBehaviour {
 
 	void spawnLetter () {
 		if (checkIfActive()) {
-			foreach (char c in Input.inputString) {
+			foreach (char dee in Input.inputString) {
+				string convert = "";
+				convert = convert + dee;
+				convert = convert.ToLower();
+				char c = convert[0];
+				/*
+					The lines above just convert any capsLocked keys to lower case so the letters still
+					spawn without issue. The same lines are in the TextController.cs script so that spells
+					can still be cast no matter the arrangement of uppercase and lowercase letters in the
+					typing variable
+				*/
 				if (c == 'a') {
 					newLetter = Instantiate(a, transform.position, Quaternion.identity) as GameObject;
 				} else if (c == 'b') {

@@ -72,13 +72,13 @@ public class enemySpawner : MonoBehaviour {
 		yield return new WaitForSeconds(3.0f);
         if (levels.level == 2)
         {
-            GameObject.Find("Boss Path/BossPathStart").gameObject.SendMessage("spawner");
+            GameObject.Find("Boss Path/BossPathStart").gameObject.SendMessage("spawner");	//Tells the path for the boss to spawn the boss in in level
             enemyNumber++;
             enemyIsAlive();
         }
         if (levels.level == 3)
         {
-            newEnemy = Instantiate(boss3, transform.position, Quaternion.identity) as GameObject;
+            newEnemy = Instantiate(boss3, transform.position, Quaternion.identity) as GameObject;	//spawns the level3 boss
             enemyNumber++;
             enemyIsAlive();
         }

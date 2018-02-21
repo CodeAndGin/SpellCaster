@@ -215,8 +215,8 @@ MonoBehaviour:
   enemy3: {fileID: 1736882559464138, guid: f552d0a97aed00448b6a6bc98e222d19, type: 2}
   enemies: []
   enemyNumber: 0
-  maxEnemies: 1
-  speed: 1
+  maxEnemies: 5
+  speed: 3
   health: 2
 --- !u!4 &245311847
 Transform:
