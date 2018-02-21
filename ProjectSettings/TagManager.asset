@@ -13,6 +13,7 @@ TagManager:
   - playerShield
   - EnemyShield
   - Lightning
+  - Floor
   layers:
   - Default
   - TransparentFX

@@ -211,7 +211,7 @@ MonoBehaviour:
   enemyAlive: 0
   boss3: {fileID: 1134279709336444, guid: 74870902c7fd60f4d9a9f796559ecab6, type: 2}
   enemy1: {fileID: 1826765868903788, guid: f054380251aecee4fa8fbc02a732c290, type: 2}
-  enemy2: {fileID: 1360570751250834, guid: 17f1ad041919e874683cf770a53e374c, type: 2}
+  enemy2: {fileID: 1218967468578428, guid: ad96f2fbe57f1064ab112a65dfb47890, type: 2}
   enemy3: {fileID: 1736882559464138, guid: f552d0a97aed00448b6a6bc98e222d19, type: 2}
   enemies: []
   enemyNumber: 0
