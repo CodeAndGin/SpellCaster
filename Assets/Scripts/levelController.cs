@@ -13,7 +13,7 @@ public class levelController : MonoBehaviour {
 	void Start () {
 		DontDestroyOnLoad(gameObject);
 		levelName = "level";
-		complete = GameObject.Find("LevelCompleteText").GetComponent<Text>();
+		if (GameObject.Find("LevelCompleteText") is GameObject) complete = GameObject.Find("LevelCompleteText").GetComponent<Text>();
 	}
 
     void Update()
@@ -45,6 +45,23 @@ public class levelController : MonoBehaviour {
         Time.timeScale = 1;
 		StopCoroutine("NextLevel");
 	}
+
+	void playerIsDead() {
+		StartCoroutine("GameOver");
+	}
+
+	IEnumerator GameOver() {
+		complete.text = "GAME OVER\n3";
+		yield return new WaitForSecondsRealtime(1.0f);
+		complete.text = "GAME OVER\n2";
+		yield return new WaitForSecondsRealtime(1.0f);
+		complete.text = "GAME OVER\n1";
+		yield return new WaitForSecondsRealtime(1.0f);
+		SceneManager.LoadScene(0);
+		Destroy(gameObject);
+		StopCoroutine("GameOver");
+	}
+
 
     public void startGame ()
     {
