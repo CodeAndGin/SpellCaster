@@ -10,6 +10,7 @@ public class bossPath : MonoBehaviour {
     private int index;
     public float moveSpeed = 7f;
 
+
     public bool spawned = false;
 
     // Use this for initialization
