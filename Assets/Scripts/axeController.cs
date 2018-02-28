@@ -24,6 +24,12 @@ public class axeController : MonoBehaviour
     void damage()
     {
         health -= 1f; //to be called by other scripts to damage the enemy
+        StartCoroutine("flashRed");
+    }
+
+    void shieldBuff()
+    {
+        //do nothing, errors if this isnt here, will fix later lol
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -37,6 +43,16 @@ public class axeController : MonoBehaviour
         Collider2D boss3Coll = boss3.GetComponent<Collider2D>();
         Destroy(boss3Coll);
         Destroy(GetComponent<Collider2D>());
+    }
+
+    IEnumerator flashRed()
+    {
+        yield return new WaitForSeconds(0.0f);
+        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        renderer.color = new Color(0.8f, 0f, 0f, 1f);
+        yield return new WaitForSeconds(0.3f);
+        renderer.color = new Color(1f, 1f, 1f, 1f);
+        StopCoroutine("flashRed");
     }
 
     // Update is called once per frame

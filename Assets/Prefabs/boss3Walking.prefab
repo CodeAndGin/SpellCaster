@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70f81e6e391356b4897e70754acead5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 11
+  thrust: 13.5
   rb: {fileID: 50272847266981792}
 --- !u!114 &114905856417370794
 MonoBehaviour:
@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ea4bc6d486cff4fb505356ff863f21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstLetter: 98
-  firstLetterAlt: 66
+  firstLetter: 45
+  firstLetterAlt: 95
 --- !u!114 &114960775179445604
 MonoBehaviour:
   m_ObjectHideFlags: 1

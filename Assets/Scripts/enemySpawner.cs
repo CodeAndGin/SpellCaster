@@ -41,6 +41,7 @@ public class enemySpawner : MonoBehaviour {
         else if ((!enemyAlive && enemyNumber == maxEnemies) && levels.level == 1 && levelup)
         {
             levels.gameObject.SendMessage("nLevel");
+            Debug.Log("next level");
             levelup = false;
         }
         else if (!enemyAlive && enemyNumber == maxEnemies)

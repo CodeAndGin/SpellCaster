@@ -6,19 +6,21 @@ public class cloudMover : MonoBehaviour {
 
     //public GameObject birbPrefab;
     //private GameObject movingBirb;
-    public float speed = 0.01f;
+    public float speed = 0.3f;
     private Rigidbody2D rb;
 
     // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        speed = 0.3f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        rb.AddForce(transform.right * speed);
+        // rb.AddForce(transform.right * speed);
+        transform.Translate(Vector3.right * Time.deltaTime * speed);
         if (transform.position.x > 25.0f) death();
     }
 
