@@ -9,12 +9,17 @@ public class levelController : MonoBehaviour {
 	public int level;
 	public Text complete;
     bool textFound = false;
-	// Use this for initialization
-	void Start () {
+    //public GameObject completePanel;
+    // Use this for initialization
+    void Start () {
 		DontDestroyOnLoad(gameObject);
-		levelName = "level";
+        //DontDestroyOnLoad(target: completePanel);
+        levelName = "level";
+        
 		if (GameObject.Find("LevelCompleteText") is GameObject) complete = GameObject.Find("LevelCompleteText").GetComponent<Text>();
-	}
+        //completePanel.SetActive(false);
+
+    }
 
     void Update()
     {
@@ -33,17 +38,20 @@ public class levelController : MonoBehaviour {
 	}
 
 	IEnumerator NextLevel() {	/*level is changing here*/
-		complete.text = "LEVEL " + level + " COMPLETE!\n Next Level in " + 3;
+        //completePanel.SetActive(true);
+
+        complete.text = "LEVEL " + level + " COMPLETE!\n Next Level in " + "III";
 		yield return new WaitForSecondsRealtime(1.0f);
-		complete.text = "LEVEL " + level + " COMPLETE!\n Next Level in " + 2;
+		complete.text = "LEVEL " + level + " COMPLETE!\n Next Level in " + "II";
 		yield return new WaitForSecondsRealtime(1.0f);
-		complete.text = "LEVEL " + level + " COMPLETE!\n Next Level in " + 1;
+		complete.text = "LEVEL " + level + " COMPLETE!\n Next Level in " + "I";
 		yield return new WaitForSecondsRealtime(1.0f);
 		level++;
 		levelName = "Level" + level;
-		SceneManager.LoadScene(levelName);
+        SceneManager.LoadScene(levelName);
         Time.timeScale = 1;
-		StopCoroutine("NextLevel");
+        //completePanel.SetActive(false);
+        StopCoroutine("NextLevel");
 	}
 
 	void playerIsDead() {

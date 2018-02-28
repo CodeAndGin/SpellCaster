@@ -17,7 +17,8 @@ public class shieldController : MonoBehaviour {
 
     void Update()
     {
-        GetComponent<SpriteRenderer>().color = new Color(86f/255f, 213f/255f, 1f, health/4f);
+        if (gameObject.tag == "playerShield") GetComponent<SpriteRenderer>().color = new Color(86f/255f, 213f/255f, 1f, health/4f);
+        if (gameObject.tag == "EnemyShield") GetComponent<SpriteRenderer>().color = new Color(255f / 255f, 86f / 255f, 86f/255f, health / 4f);
     }
 
 	public void decay() {
@@ -26,7 +27,7 @@ public class shieldController : MonoBehaviour {
 
 	void enemyInteraction(GameObject enemy) {
 		enemy.gameObject.SendMessage("damage");
-        damage();
+        if (gameObject.tag == "playerShield")  damage();
 	}
 
 	public void damage() {
