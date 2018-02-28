@@ -92,13 +92,17 @@ public class enemyController : MonoBehaviour {
 
     IEnumerator attack()
     {
-        while (true)
+        while (health > 0)
         {
-			if (health < 0) {
-				StopCoroutine("attack");
-			}
             yield return new WaitForSeconds(2f);
-            GameObject.FindWithTag("Player").gameObject.SendMessage("damage");
+            if (health <= 0)
+            {
+                StopCoroutine("attack");
+            } else
+            {
+                GameObject.FindWithTag("Player").gameObject.SendMessage("damage");
+            }
         }
+        StopCoroutine("attack");
     }
 }

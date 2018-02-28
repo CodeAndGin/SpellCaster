@@ -15,12 +15,18 @@ public class shieldController : MonoBehaviour {
 		if (gameObject.tag == "EnemyShield") owner.GetComponent<enemyController>().isShielded = true;
 	}
 
+    void Update()
+    {
+        GetComponent<SpriteRenderer>().color = new Color(86f/255f, 213f/255f, 1f, health/4f);
+    }
+
 	public void decay() {
 		Destroy(gameObject, 5.0f);
 	}
 
 	void enemyInteraction(GameObject enemy) {
 		enemy.gameObject.SendMessage("damage");
+        damage();
 	}
 
 	public void damage() {
@@ -51,6 +57,10 @@ public class shieldController : MonoBehaviour {
 	}
 
 	void powerUp () {
-		health++;
+        if (health < 3)
+        {
+            health++;
+        }
+		
 	}
 }
