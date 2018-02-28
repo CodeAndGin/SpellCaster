@@ -82,6 +82,14 @@ public class enemySpawner : MonoBehaviour {
             enemyNumber++;
             enemyIsAlive();
         }
+        if (levels.level == 4)
+        {
+            GameObject.Find("Boss path/Boss3Spawner").gameObject.SendMessage("spawner");
+            GameObject.Find("Axe Spawner").gameObject.SendMessage("spawner");
+            enemyNumber++;
+            enemyIsAlive();
+            StopCoroutine("spawnBoss");
+        }
     }
 
 	void speedUp () {
