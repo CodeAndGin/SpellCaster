@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class gameStateController : MonoBehaviour {
 
+	public GameObject pausePanel, pauseButton;
 	public bool paused;
 	// Use this for initialization
 	void Start () {
@@ -12,7 +13,7 @@ public class gameStateController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		pauseGame();
+		//pauseGame();
 	}
 
 	void pauseGame () {
@@ -26,4 +27,20 @@ public class gameStateController : MonoBehaviour {
 			}
 		}
 	}
+
+	public void Pause()
+    {
+        Time.timeScale = 0f;
+        pauseButton.SetActive(false);
+        pausePanel.SetActive(true);
+		paused = true;
+    }
+
+    public void Unpause()
+    {
+        Time.timeScale = 1f;
+        pauseButton.SetActive(true);
+        pausePanel.SetActive(false);
+		paused = false;
+    }
 }
