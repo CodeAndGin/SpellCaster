@@ -14,6 +14,8 @@ public class mechaBossController : MonoBehaviour {
 
     public AudioSource walkNoise;
     public AudioSource winningLine;
+    public AudioSource deathAudio;
+    bool playOnce = false;
 
     // Use this for initialization
     void Start () {
@@ -63,13 +65,14 @@ public class mechaBossController : MonoBehaviour {
 
     void death()
     {
-        /*aliveNoise.Stop();
+        walkNoise.Stop();
         if (playOnce == false)
         {
             deathAudio.volume = 0.5f;
             deathAudio.Play();
             playOnce = true;
-        }*/
+        }
+
         Time.timeScale = 0;
         StartCoroutine("deathSound");
 

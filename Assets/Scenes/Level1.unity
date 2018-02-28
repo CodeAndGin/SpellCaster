@@ -974,6 +974,12 @@ Prefab:
       propertyPath: maxEnemies
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114413901188394746, guid: 067b4d8ce612f3b45919fbd986df3d84,
+        type: 2}
+      propertyPath: boss3
+      value: 
+      objectReference: {fileID: 1134279709336444, guid: 74870902c7fd60f4d9a9f796559ecab6,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 067b4d8ce612f3b45919fbd986df3d84, type: 2}
   m_IsPrefabParent: 0
@@ -2259,6 +2265,10 @@ Prefab:
     - target: {fileID: 4412865943465454, guid: c10d5da36ce0a064c81823078f29aefe, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762166223980586, guid: c10d5da36ce0a064c81823078f29aefe, type: 2}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c10d5da36ce0a064c81823078f29aefe, type: 2}

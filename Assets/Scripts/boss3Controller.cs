@@ -24,6 +24,14 @@ public class boss3Controller : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.y > -4.85)
+        {
+            aliveNoise.Pause();
+        }
+        else if (transform.position.y < -4.85)
+        {
+            aliveNoise.UnPause();
+        }
         //if (health < 1) death();
         if (transform.position.y < -30) death();
     }
@@ -42,13 +50,13 @@ public class boss3Controller : MonoBehaviour {
 
     void death()
     {
-        //aliveNoise.Stop();
-        //if (playOnce == false)
-        //{
-           // deathAudio.volume = 0.5f;
-           // deathAudio.Play();
+        aliveNoise.Stop();
+        if (playOnce == false)
+        {
+            deathAudio.volume = 0.5f;
+            deathAudio.Play();
             playOnce = true;
-        //}
+        }
         Time.timeScale = 0;
         //GameObject.Find("Boss Path/BossPathStart").GetComponent<bossPath>().moveSpeed = 0;
         StartCoroutine("deathSound");

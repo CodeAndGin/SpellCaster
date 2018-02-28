@@ -7,6 +7,7 @@ public class axeController : MonoBehaviour
 
     public float health;
     private GameObject boss3;
+    public AudioSource dmgSound;
 
     // Use this for initialization
     
@@ -23,6 +24,8 @@ public class axeController : MonoBehaviour
 
     void damage()
     {
+        dmgSound.volume = 0.5f;
+        dmgSound.Play();
         health -= 1f; //to be called by other scripts to damage the enemy
         StartCoroutine("flashRed");
     }
