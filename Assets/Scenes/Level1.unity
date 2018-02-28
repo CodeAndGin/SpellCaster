@@ -430,11 +430,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-<<<<<<< HEAD
-  m_AnchoredPosition: {x: 66, y: -92.125}
-=======
   m_AnchoredPosition: {x: 360.3, y: 89}
->>>>>>> origin/animation
   m_SizeDelta: {x: 83, y: 151}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &277843834
@@ -560,11 +556,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 8
-=======
   m_RootOrder: 15
->>>>>>> origin/animation
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &307770369
 AudioSource:
@@ -911,16 +903,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114413901188394746, guid: 067b4d8ce612f3b45919fbd986df3d84,
         type: 2}
-<<<<<<< HEAD
-      propertyPath: maxEnemies
-      value: 5
-      objectReference: {fileID: 0}
-=======
       propertyPath: enemy2
       value: 
       objectReference: {fileID: 1218967468578428, guid: ad96f2fbe57f1064ab112a65dfb47890,
         type: 2}
->>>>>>> origin/Boss_3
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 067b4d8ce612f3b45919fbd986df3d84, type: 2}
   m_IsPrefabParent: 0
@@ -2320,8 +2306,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1962891224}
-<<<<<<< HEAD
-=======
 --- !u!1 &1968266439
 GameObject:
   m_ObjectHideFlags: 0
@@ -2395,7 +2379,6 @@ Transform:
   m_Father: {fileID: 1079173067}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> origin/Boss_3
 --- !u!1001 &2061001316
 Prefab:
   m_ObjectHideFlags: 0
