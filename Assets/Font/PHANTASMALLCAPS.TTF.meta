@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 902696c93c1324e40aa035b8b6b38a53
+timeCreated: 1519782162
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Phantasm
+  fontNames:
+  - Phantasm
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
