@@ -17,6 +17,7 @@ public class enemyController : MonoBehaviour {
     bool played = false;
 
 	void Start () {
+		health = 1;
 		rb = GetComponent<Rigidbody2D>();
 		spawner = GameObject.Find("EnemySpawner");
 
