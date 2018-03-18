@@ -59,6 +59,9 @@ public class TextController : MonoBehaviour {
 			if (Input.GetKeyDown(KeyCode.Return)) {
 				checkSpellForEnemyBuff(typing);
 				typing = "";
+			} else if (Input.GetKeyDown(KeyCode.Backspace)) {
+				typing = "";
+				deleteLetters();
 			} else {
 				string convert = "";
 				convert = convert + c;
@@ -74,7 +77,7 @@ public class TextController : MonoBehaviour {
 			}
 		}
 	}
-
+//checks if enemy is immune or not and then casts spell or gives shield to enemy
 	void checkSpellForEnemyBuff (string spell) {
 		string letter = "";
 		letter += enemyLetter;
@@ -84,13 +87,17 @@ public class TextController : MonoBehaviour {
 			if (GameObject.FindWithTag("EnemyShield") is GameObject) {
 				GameObject.FindWithTag("EnemyShield").gameObject.SendMessage("powerUp");
 			} else GameObject.FindWithTag("Enemy").gameObject.SendMessage("shieldBuff");
-			GameObject[] Letters = GameObject.FindGameObjectsWithTag("Letter"); //code adapted from user ZoogyBurger @ https://answers.unity.com/questions/1143629/destroy-multiple-gameobjects-with-tag-c.html
-			foreach (GameObject letters in Letters) {
-				GameObject.Destroy(letters);
-			}
-			currentLetterSpawner = 0;
+			deleteLetters();
 		} else {
 			player.gameObject.SendMessage("castSpell", spell);
 		}
+	}
+
+	void deleteLetters () {
+		GameObject[] Letters = GameObject.FindGameObjectsWithTag("Letter"); //code adapted from user ZoogyBurger @ https://answers.unity.com/questions/1143629/destroy-multiple-gameobjects-with-tag-c.html
+		foreach (GameObject letters in Letters) {
+			GameObject.Destroy(letters);
+		}
+		currentLetterSpawner = 0;
 	}
 }

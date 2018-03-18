@@ -17,6 +17,7 @@ public class enemySpawner : MonoBehaviour {
 	public int maxEnemies;
 
 	public float speed = 2;
+	public float startSpeed = 2;
     public int health = 1;
     bool levelup = true;
 
@@ -98,6 +99,6 @@ public class enemySpawner : MonoBehaviour {
 	}
 
 	void slowDown () {
-		speed = 1f;
+		speed = startSpeed;
 	}
 }

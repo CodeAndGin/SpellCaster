@@ -56,6 +56,7 @@ public class playerController : MonoBehaviour
             hp -= 1;
             Debug.Log("HEALTH: " + hp);
             Destroy(GameObject.Find("heart(Clone)"));
+            GameObject.Find("EnemySpawner").gameObject.SendMessage("slowDown");
             StartCoroutine("flashRed");
         }
     }
