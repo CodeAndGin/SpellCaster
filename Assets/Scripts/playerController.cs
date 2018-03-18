@@ -7,7 +7,9 @@ public class playerController : MonoBehaviour
     public bool isShielded = false;
     //spells
     public GameObject fire;
+    public GameObject fireball;
     public GameObject ice;
+    public GameObject icicle;
     public GameObject lightning;
     public GameObject shield;
     private GameObject spell;
@@ -74,20 +76,28 @@ public class playerController : MonoBehaviour
 
     void castSpell(string s)
     {
-        if (s == "fireball" || s == "Fireball")
+        if (s == "fire")
         {
-            spell = Instantiate(fire, transform.position, Quaternion.identity) as GameObject;
+            spell = Instantiate(fire, transform.position, ice.transform.rotation) as GameObject;
         }
-        else if (s == "icicle" || s == "Icicle")
+        else if (s == "fireball")
+        {
+            spell = Instantiate(fireball, transform.position, Quaternion.identity) as GameObject;
+        }
+        else if (s == "ice")
         {
             spell = Instantiate(ice, transform.position, ice.transform.rotation) as GameObject;
         }
-        else if (s == "lightning" || s == "Lightning")
+        else if (s == "icicle")
+        {
+            spell = Instantiate(icicle, transform.position, ice.transform.rotation) as GameObject;
+        }
+        else if (s == "lightning")
         {
             Vector3 pos = new Vector3(transform.position.x + 5f, transform.position.y - 0.5f, transform.position.z);
             spell = Instantiate(lightning, pos, Quaternion.identity) as GameObject;
         }
-        else if (s == "shield" || s == "Shield")
+        else if (s == "shield")
         {
             if (GameObject.FindWithTag("playerShield") is GameObject)
             {
