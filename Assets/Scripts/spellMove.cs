@@ -5,6 +5,7 @@ using UnityEngine;
 public class spellMove : MonoBehaviour {
 
 	public float speed;
+	public float damageDealt;
 	private Rigidbody2D rb;
 
 	// Use this for initialization
@@ -14,25 +15,20 @@ public class spellMove : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		// Vector2 movement = new Vector2 (1.0f, 0.0f);
 		rb.AddForce(transform.right*speed);
 		if (transform.position.x > 25.0f) death();
 	}
 
 	void enemyInteraction(GameObject enemy) {
-		enemy.gameObject.SendMessage("damage");
+		enemy.gameObject.SendMessage("damage", damageDealt);
 	}
 
-	public void damage() {
+	public void damage(int a) {
 		death();
 	}
 
 	public void death() {
 		Destroy(gameObject);
-	}
-
-	public void decay() {
-		Destroy(gameObject, 5.0f);
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
