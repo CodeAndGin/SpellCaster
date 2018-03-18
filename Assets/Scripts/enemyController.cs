@@ -17,6 +17,7 @@ public class enemyController : MonoBehaviour {
     bool played = false;
 
 	void Start () {
+		health = 1;
 		rb = GetComponent<Rigidbody2D>();
 		spawner = GameObject.Find("EnemySpawner");
 
@@ -38,9 +39,9 @@ public class enemyController : MonoBehaviour {
 		transform.Translate(-Vector3.right*Time.deltaTime*speed);	//moves the enemy
 	}
 
-	void damage() {
+	void damage(float amount) {
 		if (!isShielded) {
-			health -= 1f; //to be called by other scripts to damage the enemy
+			health -= amount; //to be called by other scripts to damage the enemy
 			StartCoroutine("flashRed");
 		}
 	}
