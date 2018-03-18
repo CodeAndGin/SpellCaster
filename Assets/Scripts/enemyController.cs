@@ -109,4 +109,16 @@ public class enemyController : MonoBehaviour {
         }
         StopCoroutine("attack");
     }
+
+	public float GetSpeed () {
+		return speed;
+	}
+
+	void SetSpeed (float s) {
+		speed = s;
+	}
+
+	void MultSpeed (float mult) {
+		speed *= mult;
+	}
 }

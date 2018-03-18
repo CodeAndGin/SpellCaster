@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class statusEffects : MonoBehaviour {
-
 	enemyController thisController;
 
 	//shock variables
@@ -21,7 +20,7 @@ public class statusEffects : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		thisController = GetComponent<enemyController>();
+		if (GetComponent<enemyController>() is enemyController) thisController = GetComponent<enemyController>();
 	}
 
 	// Update is called once per frame
@@ -45,11 +44,11 @@ public class statusEffects : MonoBehaviour {
 	}
 
 	IEnumerator Stopped () {
-		float a = thisController.speed;
-		thisController.speed = 0;
+		float a = gameObject.GetComponent<enemyController>().GetSpeed();
+		gameObject.SendMessage("SetSpeed", 0f);
 		isStopped= true;
 		yield return new WaitForSeconds(amountTimeShocked);
-		thisController.speed = a;
+		gameObject.SendMessage("SetSpeed", a);
 		isStopped = false;
 		StopCoroutine("Stopped");
 	}
@@ -60,12 +59,12 @@ public class statusEffects : MonoBehaviour {
 	}
 
 	IEnumerator Slowed () {
-		thisController.speed *= 0.5f;
+		gameObject.SendMessage("MultSpeed", 0.5f);
 		isSlowed = true;
         SpriteRenderer renderer = GetComponent<SpriteRenderer>();
         renderer.color = new Color(0f, 0f, 0.8f, 1f);
         yield return new WaitForSeconds(amountTimeSlowed);
-		thisController.speed *= 2f;
+		gameObject.SendMessage("MultSpeed", 2f);
 		isSlowed = false;
         renderer.color = new Color(1f, 1f, 1f, 1f);
         StopCoroutine("Slowed");
