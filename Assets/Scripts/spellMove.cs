@@ -20,7 +20,16 @@ public class spellMove : MonoBehaviour {
 	}
 
 	void enemyInteraction(GameObject enemy) {
-		enemy.gameObject.SendMessage("damage", damageDealt);
+		if (gameObject.name == "Fireball" || gameObject.name == "Fireball(Clone)") {
+			enemy.gameObject.SendMessage("fireballBurn");
+			enemy.gameObject.SendMessage("damage", damageDealt);
+		} else if (gameObject.name == "Icicle" || gameObject.name == "Icicle(Clone)") {
+			enemy.gameObject.SendMessage("icicleSlowDown");
+			enemy.gameObject.SendMessage("damage", damageDealt);
+		} else {
+			enemy.gameObject.SendMessage("damage", damageDealt);
+		}
+
 	}
 
 	public void damage(int a) {
