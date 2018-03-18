@@ -90,7 +90,8 @@ public class playerController : MonoBehaviour
         }
         else if (s == "icicle")
         {
-            spell = Instantiate(icicle, transform.position, ice.transform.rotation) as GameObject;
+            Vector3 pos = new Vector3(transform.position.x + 2f, transform.position.y, transform.position.z);
+            spell = Instantiate(icicle, pos, ice.transform.rotation) as GameObject;
         }
         else if (s == "lightning")
         {
