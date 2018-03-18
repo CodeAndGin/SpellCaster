@@ -27,6 +27,16 @@ public class statusEffects : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        if (isSlowed && !thisController.isFlashingRed)
+        {
+            SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+            renderer.color = new Color(0f, 0f, 0.8f, 1f);
+        }
+        else if (!thisController.isFlashingRed)
+        {
+            SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+            renderer.color = new Color(1f, 1f, 1f, 1f);
+        }
 	}
 
 	void zapped () {
@@ -52,11 +62,14 @@ public class statusEffects : MonoBehaviour {
 	IEnumerator Slowed () {
 		thisController.speed *= 0.5f;
 		isSlowed = true;
-		yield return new WaitForSeconds(amountTimeSlowed);
+        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        renderer.color = new Color(0f, 0f, 0.8f, 1f);
+        yield return new WaitForSeconds(amountTimeSlowed);
 		thisController.speed *= 2f;
 		isSlowed = false;
-		StopCoroutine("Slowed");
-	}
+        renderer.color = new Color(1f, 1f, 1f, 1f);
+        StopCoroutine("Slowed");
+    }
 
 	void fireballBurn () {
 		if (!isBurning) {
@@ -67,12 +80,15 @@ public class statusEffects : MonoBehaviour {
 	IEnumerator Burning () {
 		isBurning = true;
 		float i = 0;
-		while (i < amountTimeBurned) {
+        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        renderer.color = new Color(1f, 0.6f, 0f, 1f);
+        while (i < amountTimeBurned) {
 			gameObject.SendMessage("damage", damagePerTick);
 			i += tickFreq;
 			yield return new WaitForSeconds(tickFreq);
 		}
 		isBurning = false;
-		StopCoroutine("Burning");
+        renderer.color = new Color(1f, 1f, 1f, 1f);
+        StopCoroutine("Burning");
 	}
 }
