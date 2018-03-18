@@ -43,10 +43,15 @@ public class TextController : MonoBehaviour {
 	}
 
 	void checkEnemyName() {
-		if (GameObject.FindWithTag("Enemy") is GameObject) {
-			enemyLetter = GameObject.FindWithTag("Enemy").GetComponent<enemyName>().firstLetter;
-			enemyLetterCaps = GameObject.FindWithTag("Enemy").GetComponent<enemyName>().firstLetterAlt;
+		GameObject[] EnemyArray = GameObject.FindGameObjectsWithTag("Enemy");
+		if (EnemyArray[0] is GameObject) {
+			enemyLetter = EnemyArray[0].GetComponent<enemyName>().firstLetter;
+			enemyLetterCaps = EnemyArray[0].GetComponent<enemyName>().firstLetterAlt;
 		}
+		// if (GameObject.FindWithTag("Enemy") is GameObject) {
+		// 	enemyLetter = GameObject.FindWithTag("Enemy").GetComponent<enemyName>().firstLetter;
+		// 	enemyLetterCaps = GameObject.FindWithTag("Enemy").GetComponent<enemyName>().firstLetterAlt;
+		// }
         if (GameObject.FindWithTag("Miniboss") is GameObject)
         {
             enemyLetter = GameObject.FindWithTag("Miniboss").GetComponent<enemyName>().firstLetter;
@@ -83,10 +88,11 @@ public class TextController : MonoBehaviour {
 		letter += enemyLetter;
 		string letterBig = "";
 		letterBig += enemyLetterCaps;
-		if ((spell.Contains(letter) || spell.Contains(letterBig)) && GameObject.FindWithTag("Enemy") is GameObject) {
+		GameObject[] EnemyArray = GameObject.FindGameObjectsWithTag("Enemy");
+		if ((spell.Contains(letter) || spell.Contains(letterBig)) && EnemyArray[0] is GameObject) {
 			if (GameObject.FindWithTag("EnemyShield") is GameObject) {
 				GameObject.FindWithTag("EnemyShield").gameObject.SendMessage("powerUp");
-			} else GameObject.FindWithTag("Enemy").gameObject.SendMessage("shieldBuff");
+			} else EnemyArray[0].gameObject.SendMessage("shieldBuff");
 			deleteLetters();
 		} else {
 			player.gameObject.SendMessage("castSpell", spell);
