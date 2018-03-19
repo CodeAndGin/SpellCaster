@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 114084989803403246}
   - component: {fileID: 114771296397931468}
   - component: {fileID: 82031835630569502}
+  - component: {fileID: 114999083893683386}
   m_Layer: 0
   m_Name: Goblin
   m_TagString: Enemy
@@ -379,6 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5263bd8b873cd6846bb357a0baef3c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFlashingRed: 0
   isShielded: 0
   shield: {fileID: 1018647704215016, guid: 87951405076626148b73172fd65c0c2f, type: 2}
   health: 1
@@ -396,6 +398,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstLetter: 103
   firstLetterAlt: 71
+--- !u!114 &114999083893683386
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1971532896557374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d71dd5749f952c54183043cf859f9bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountTimeShocked: 2
+  amountTimeSlowed: 3
+  amountTimeBurned: 3
+  tickFreq: 1
+  damagePerTick: 0.1
 --- !u!212 &212032785124493822
 SpriteRenderer:
   m_ObjectHideFlags: 1

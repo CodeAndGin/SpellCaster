@@ -15,14 +15,1183 @@ Platform assembly: C:\Users\Diarm\Desktop\spellingCaster\spellingCaster_Data\Man
 Loading C:\Users\Diarm\Desktop\spellingCaster\spellingCaster_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Diarm\Desktop\spellingCaster\spellingCaster_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Diarm\Desktop\spellingCaster\spellingCaster_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.045 seconds
+- Completed reload, in  0.041 seconds
 Platform assembly: C:\Users\Diarm\Desktop\spellingCaster\spellingCaster_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Diarm\Desktop\spellingCaster\spellingCaster_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.258464 ms
+UnloadTime: 2.441438 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.722467 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 833.
+Total: 0.384410 ms (FindLiveObjects: 0.038564 ms CreateObjectMapping: 0.029538 ms MarkObjects: 0.303179 ms  DeleteObjects: 0.012307 ms)
+
+next level
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at TextController.checkEnemyName () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at enemySpawner+<spawnBoss>c__Iterator1.MoveNext () [0x00000] in <filename unknown>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.062975 ms
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 803.
+Total: 0.523898 ms (FindLiveObjects: 0.058256 ms CreateObjectMapping: 0.056615 ms MarkObjects: 0.299077 ms  DeleteObjects: 0.109538 ms)
+
+Failed to call function damage of class enemyController
+Calling function damage with no parameters but the function requires 1.
+ 
+(Filename:  Line: 804)
+
+Failed to call function damage of class enemyController
+Calling function damage with no parameters but the function requires 1.
+ 
+(Filename:  Line: 804)
+
+HEALTH: 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+HEALTH: 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Not a match
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+HEALTH: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+HEALTH: 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at TextController.checkSpellForEnemyBuff (System.String spell) [0x00000] in <filename unknown>:0 
+  at TextController.addToString () [0x00000] in <filename unknown>:0 
+  at TextController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at enemyController+<attack>c__Iterator2.MoveNext () [0x00000] in <filename unknown>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.507898 ms
+
+Unloading 399 unused Assets to reduce memory usage. Loaded Objects now: 298.
+Total: 2.862772 ms (FindLiveObjects: 0.059897 ms CreateObjectMapping: 0.055794 ms MarkObjects: 0.152205 ms  DeleteObjects: 2.594464 ms)
+
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 4994 -> priority: 1 
-  Thread -> id: 4998 -> priority: 1 
+  Thread -> id: 4e34 -> priority: 1 
+  Thread -> id: 4e38 -> priority: 1 

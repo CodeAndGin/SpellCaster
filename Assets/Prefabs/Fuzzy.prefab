@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114454575184275234}
   - component: {fileID: 114606723679298990}
   - component: {fileID: 82590046503977924}
+  - component: {fileID: 114040767589859032}
   m_Layer: 0
   m_Name: Fuzzy
   m_TagString: Enemy
@@ -338,6 +339,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114040767589859032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1023951301524050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d71dd5749f952c54183043cf859f9bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountTimeShocked: 2
+  amountTimeSlowed: 3
+  amountTimeBurned: 3
+  tickFreq: 0.25
+  damagePerTick: 0.1
 --- !u!114 &114454575184275234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -349,6 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5263bd8b873cd6846bb357a0baef3c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFlashingRed: 0
   isShielded: 0
   shield: {fileID: 1018647704215016, guid: 87951405076626148b73172fd65c0c2f, type: 2}
   health: 1
