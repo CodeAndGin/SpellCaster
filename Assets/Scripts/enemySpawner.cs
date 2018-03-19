@@ -14,6 +14,7 @@ public class enemySpawner : MonoBehaviour {
 	private GameObject newEnemy;
 	private levelController levels;
 	public int enemyNumber;
+	public int enemiesKilled;
 	public int maxEnemies;
 
 	public float speed = 2;
@@ -30,29 +31,29 @@ public class enemySpawner : MonoBehaviour {
         newEnemy = Instantiate(enemies[(int)Math.Floor((double)UnityEngine.Random.Range(0,3))], transform.position, Quaternion.identity) as GameObject;
 		levels = GameObject.Find("LevelController").GetComponent<levelController>();
 		enemyNumber = 0;
+		enemiesKilled = 0;
 		StartCoroutine("spawn");
 		//maxEnemies = levels.level*5;
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         if (enemyNumber < maxEnemies)
         {
             //StartCoroutine("spawn");
         }
-        else if ((!enemyAlive && enemyNumber == maxEnemies) && levels.level == 1 && levelup)
+        else if ((!enemyAlive && enemiesKilled > maxEnemies) && levels.level == 1 && levelup)
         {
             levels.gameObject.SendMessage("nLevel");
             Debug.Log("next level");
             levelup = false;
         }
-        else if (!enemyAlive && enemyNumber == maxEnemies)
+        else if (!enemyAlive && enemiesKilled > maxEnemies)
         {
             StartCoroutine("spawnBoss");
         }
         else if (enemyAlive)
         {
-            StopCoroutine("spawn");
             StopCoroutine("spawnBoss");
         }
 	}
@@ -63,6 +64,7 @@ public class enemySpawner : MonoBehaviour {
 
 	void enemyIsDead () {
 		enemyAlive = false;
+		enemiesKilled++;
 	}
 
 	IEnumerator spawn() {

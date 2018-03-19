@@ -15,13 +15,13 @@ public class levelController : MonoBehaviour {
 		DontDestroyOnLoad(gameObject);
         //DontDestroyOnLoad(target: completePanel);
         levelName = "level";
-        
+
 		if (GameObject.Find("LevelCompleteText") is GameObject) complete = GameObject.Find("LevelCompleteText").GetComponent<Text>();
         //completePanel.SetActive(false);
 
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (GameObject.Find("LevelCompleteText") != null && !textFound) {
             complete = GameObject.Find("LevelCompleteText").GetComponent<Text>();

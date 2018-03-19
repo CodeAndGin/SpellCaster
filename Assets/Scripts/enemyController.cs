@@ -5,10 +5,12 @@ using UnityEngine;
 public class enemyController : MonoBehaviour {
     public bool isFlashingRed = false;
 	public bool isShielded = false;
+	bool dying = false;
 	GameObject shieldClone;
 	public GameObject shield;
 	public float health;
 	public float speed;
+	private float oldSpeed;
 	//The rigidbody so we can move the enemy
 	private Rigidbody2D rb;
 	//So we can get the level number.
@@ -35,7 +37,7 @@ public class enemyController : MonoBehaviour {
 	}
 
 	void Update () {
-		if (health <= 0f) death(); //Kills the enemy if health is 0
+		if (health <= 0f && !dying) death(); //Kills the enemy if health is 0
 		if (transform.position.x < -20) death(); //Kills the enemy if it leaves the left of the screen
 		transform.Translate(-Vector3.right*Time.deltaTime*speed);	//moves the enemy
 	}
@@ -46,6 +48,8 @@ public class enemyController : MonoBehaviour {
 			StartCoroutine("flashRed");
 		}
 	}
+
+
 
 	IEnumerator flashRed()
     {
@@ -71,9 +75,21 @@ public class enemyController : MonoBehaviour {
             speed = 0;
             StartCoroutine("attack");
 		}
+		if (other.gameObject.tag == "Enemy") {
+			oldSpeed = speed;
+            speed = 0;
+            //StartCoroutine("attack");
+		}
+	}
+
+	void OnCollisionExit2D(Collision2D other) {
+		if (other.gameObject.tag == "Enemy") {
+			speed = oldSpeed;
+		}
 	}
 
 	void death() {
+		dying = true;
         speed = 0;
 
         if (played == false) {	//yeah so the sound is being played in death() and the death is happening in deathSound() dont ask pls;

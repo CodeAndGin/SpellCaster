@@ -10,6 +10,8 @@ public class letterSpawn : MonoBehaviour {
 
 	public int identity;
 
+	public bool active;
+
 	private GameObject newLetter;
 	public GameObject a;
 	public GameObject b;
@@ -48,6 +50,7 @@ public class letterSpawn : MonoBehaviour {
 		if (!gameState.paused) {
 			spawnLetter();
 		}
+		active = checkIfActive();
 	}
 
 	bool checkIfActive () {
@@ -60,7 +63,7 @@ public class letterSpawn : MonoBehaviour {
 	}
 
 	void spawnLetter () {
-		if (checkIfActive()) {
+		if (active) {
 			foreach (char dee in Input.inputString) {
 				string convert = "";
 				convert = convert + dee;

@@ -14,7 +14,7 @@ public class spellMove : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		rb.AddForce(transform.right*speed);
 		if (transform.position.x > 25.0f) death();
 	}
