@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 61538799854459072}
   - component: {fileID: 114449944886581244}
   - component: {fileID: 82599663350592114}
+  - component: {fileID: 114945365167418456}
   m_Layer: 0
   m_Name: Chomp
   m_TagString: Enemy
@@ -362,10 +363,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5263bd8b873cd6846bb357a0baef3c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFlashingRed: 0
   isShielded: 0
   shield: {fileID: 1018647704215016, guid: 87951405076626148b73172fd65c0c2f, type: 2}
   health: 1
   speed: 1
+--- !u!114 &114945365167418456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1168015628701714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d71dd5749f952c54183043cf859f9bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountTimeShocked: 2
+  amountTimeSlowed: 3
+  amountTimeBurned: 3
+  tickFreq: 0.25
+  damagePerTick: 0.1
 --- !u!212 &212096707790011340
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -88,15 +88,23 @@ public class TextController : MonoBehaviour {
 		letter += enemyLetter;
 		string letterBig = "";
 		letterBig += enemyLetterCaps;
-		GameObject[] EnemyArray = GameObject.FindGameObjectsWithTag("Enemy");
-		if ((spell.Contains(letter) || spell.Contains(letterBig)) && EnemyArray[0] is GameObject) {
-			if (GameObject.FindWithTag("EnemyShield") is GameObject) {
-				GameObject.FindWithTag("EnemyShield").gameObject.SendMessage("powerUp");
-			} else EnemyArray[0].gameObject.SendMessage("shieldBuff");
-			deleteLetters();
-		} else {
-			player.gameObject.SendMessage("castSpell", spell);
-		}
+		//if (GameObject.FindWithTag("Enemy") is GameObject || GameObject.FindWithTag("Miniboss") is GameObject) {
+			GameObject[] EnemyArray = GameObject.FindGameObjectsWithTag("Enemy");
+			if (EnemyArray.Length > 0) {
+				if ((spell.Contains(letter) || spell.Contains(letterBig)) && EnemyArray[0] is GameObject) {
+					if (GameObject.FindWithTag("EnemyShield") is GameObject) {
+						GameObject.FindWithTag("EnemyShield").gameObject.SendMessage("powerUp");
+					} else EnemyArray[0].gameObject.SendMessage("shieldBuff");
+					deleteLetters();
+				}
+				else {
+					player.gameObject.SendMessage("castSpell", spell);
+				}
+			} else {
+				player.gameObject.SendMessage("castSpell", spell);
+			}
+		//}
+
 	}
 
 	void deleteLetters () {
