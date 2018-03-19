@@ -5,22 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class endController : MonoBehaviour {
     public GameObject text1;
-
+    bool isEnding = false;
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         StartCoroutine("Ending");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (!isEnding) StartCoroutine("Ending");
 	}
 
     IEnumerator Ending()
     {
-        yield return new WaitForSeconds(2f);
+        isEnding = true;
+        yield return new WaitForSecondsRealtime(2f);
         text1.SetActive(true);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSecondsRealtime(5f);
         SceneManager.LoadScene("menu");
+        Time.timeScale= 1f;
     }
 }

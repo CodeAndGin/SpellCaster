@@ -78,9 +78,9 @@ public class mechaBossController : MonoBehaviour {
 
     }
 
-    void damage()
+    void damage(float d)
     {
-        health -= 1f; //to be called by other scripts to damage the enemy
+        health -= d; //to be called by other scripts to damage the enemy
         StartCoroutine("flashRed");
     }
 

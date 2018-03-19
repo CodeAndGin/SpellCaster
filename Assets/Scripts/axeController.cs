@@ -22,11 +22,11 @@ public class axeController : MonoBehaviour
         if (transform.position.y < -30) death();
     }
 
-    void damage()
+    void damage(float d)
     {
         dmgSound.volume = 0.5f;
         dmgSound.Play();
-        health -= 1f; //to be called by other scripts to damage the enemy
+        health -= d; //to be called by other scripts to damage the enemy
         StartCoroutine("flashRed");
     }
 

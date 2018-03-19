@@ -34,9 +34,15 @@ public class levelController : MonoBehaviour {
     }
 
 	void nLevel() {
-		if (level < 4) {
-			StartCoroutine("NextLevel");
-		} else SceneManager.LoadScene("end");
+        if (level < 4)
+        {
+            StartCoroutine("NextLevel");
+        }
+        else
+        {
+            SceneManager.LoadScene("end");
+            Destroy(gameObject);
+        }
 
 	}
 

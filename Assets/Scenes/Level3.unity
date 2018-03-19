@@ -1102,6 +1102,12 @@ Prefab:
       propertyPath: maxEnemies
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114413901188394746, guid: 067b4d8ce612f3b45919fbd986df3d84,
+        type: 2}
+      propertyPath: enemy1
+      value: 
+      objectReference: {fileID: 1782215120279838, guid: b823ff0f90647484980aac77cbe67db4,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 067b4d8ce612f3b45919fbd986df3d84, type: 2}
   m_IsPrefabParent: 0
