@@ -34,7 +34,10 @@ public class levelController : MonoBehaviour {
     }
 
 	void nLevel() {
-		StartCoroutine("NextLevel");
+		if (level < 4) {
+			StartCoroutine("NextLevel");
+		} else SceneManager.LoadScene("end");
+
 	}
 
 	IEnumerator NextLevel() {	/*level is changing here*/
