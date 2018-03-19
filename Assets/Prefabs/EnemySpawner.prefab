@@ -53,7 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyAlive: 0
   boss3: {fileID: 1134279709336444, guid: 74870902c7fd60f4d9a9f796559ecab6, type: 2}
-  enemy1: {fileID: 1177080745667780, guid: b823ff0f90647484980aac77cbe67db4, type: 2}
+  enemy1: {fileID: 1782215120279838, guid: b823ff0f90647484980aac77cbe67db4, type: 2}
   enemy2: {fileID: 1023951301524050, guid: 46cd16957a5ddba449f7599d3a835093, type: 2}
   enemy3: {fileID: 1168015628701714, guid: f66bda52a5c761e4096391cdd16bcee3, type: 2}
   enemies: []

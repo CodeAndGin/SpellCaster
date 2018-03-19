@@ -63,6 +63,10 @@ public class enemyController : MonoBehaviour {
         StopCoroutine("flashRed");
     }
 
+	public float GetHealth() {
+		return health;
+	}
+
     void OnTriggerEnter2D(Collider2D other) {
 		other.gameObject.SendMessage("enemyInteraction", gameObject);	//tells whatever trigger touches it to do the "enemyInteraction" function
 		if (other.gameObject.tag == "Projectile" || other.gameObject.tag == "Shield") other.gameObject.SendMessage("death"); //destroys Projectiles and shields
