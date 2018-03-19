@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: cf860a154e34f2147b43061724b55cae
-timeCreated: 1521412841
+guid: 395c1e0d8beef0c4ab319cc32e85e397
+timeCreated: 1521425179
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: goblin walk_0
-    21300002: goblin walk_1
-    21300004: goblin walk_2
-    21300006: goblin walk_3
-    21300008: goblin walk_4
-    21300010: goblin walk_5
-    21300012: goblin walk_6
-    21300014: goblin walk_7
+    21300000: gobling sprite 8bit_0
+    21300002: gobling sprite 8bit_1
+    21300004: gobling sprite 8bit_2
+    21300006: gobling sprite 8bit_3
+    21300008: gobling sprite 8bit_4
+    21300010: gobling sprite 8bit_5
+    21300012: gobling sprite 8bit_6
+    21300014: gobling sprite 8bit_7
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -78,7 +78,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: goblin walk_0
+      name: gobling sprite 8bit_0
       rect:
         serializedVersion: 2
         x: 0
@@ -91,7 +91,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: goblin walk_1
+      name: gobling sprite 8bit_1
       rect:
         serializedVersion: 2
         x: 524
@@ -104,7 +104,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: goblin walk_2
+      name: gobling sprite 8bit_2
       rect:
         serializedVersion: 2
         x: 1048
@@ -117,7 +117,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: goblin walk_3
+      name: gobling sprite 8bit_3
       rect:
         serializedVersion: 2
         x: 1572
@@ -130,7 +130,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: goblin walk_4
+      name: gobling sprite 8bit_4
       rect:
         serializedVersion: 2
         x: 0
@@ -143,7 +143,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: goblin walk_5
+      name: gobling sprite 8bit_5
       rect:
         serializedVersion: 2
         x: 524
@@ -156,7 +156,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: goblin walk_6
+      name: gobling sprite 8bit_6
       rect:
         serializedVersion: 2
         x: 1048
@@ -169,7 +169,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: goblin walk_7
+      name: gobling sprite 8bit_7
       rect:
         serializedVersion: 2
         x: 1572
