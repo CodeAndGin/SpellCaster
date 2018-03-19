@@ -53,11 +53,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyAlive: 0
   boss3: {fileID: 1134279709336444, guid: 74870902c7fd60f4d9a9f796559ecab6, type: 2}
-  enemy1: {fileID: 1826765868903788, guid: f054380251aecee4fa8fbc02a732c290, type: 2}
-  enemy2: {fileID: 1360570751250834, guid: 17f1ad041919e874683cf770a53e374c, type: 2}
-  enemy3: {fileID: 1736882559464138, guid: f552d0a97aed00448b6a6bc98e222d19, type: 2}
+  enemy1: {fileID: 1971532896557374, guid: b823ff0f90647484980aac77cbe67db4, type: 2}
+  enemy2: {fileID: 1023951301524050, guid: 46cd16957a5ddba449f7599d3a835093, type: 2}
+  enemy3: {fileID: 1168015628701714, guid: f66bda52a5c761e4096391cdd16bcee3, type: 2}
   enemies: []
   enemyNumber: 0
+  enemiesKilled: 0
   maxEnemies: 10
   speed: 2
+  startSpeed: 2
   health: 1

@@ -114,16 +114,6 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-<<<<<<< HEAD
-  - component: {fileID: 4054173828363466}
-  - component: {fileID: 212256328973092070}
-  - component: {fileID: 50637309665391764}
-  - component: {fileID: 61738028221224018}
-  - component: {fileID: 114609428771764186}
-  - component: {fileID: 114962120053005834}
-  - component: {fileID: 82966073332764554}
-  - component: {fileID: 114580405089335164}
-=======
   - component: {fileID: 4418467910968008}
   - component: {fileID: 212128972582516802}
   - component: {fileID: 95205048337465628}
@@ -132,7 +122,6 @@ GameObject:
   - component: {fileID: 114084989803403246}
   - component: {fileID: 114771296397931468}
   - component: {fileID: 82031835630569502}
->>>>>>> menu
   m_Layer: 0
   m_Name: Goblin
   m_TagString: Enemy
@@ -362,25 +351,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
-<<<<<<< HEAD
---- !u!114 &114580405089335164
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1826765868903788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d71dd5749f952c54183043cf859f9bb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amountTimeShocked: 2
-  amountTimeSlowed: 3
-  amountTimeBurned: 3
-  tickFreq: 0.25
-  damagePerTick: 0.1
---- !u!114 &114609428771764186
-=======
 --- !u!95 &95205048337465628
 Animator:
   serializedVersion: 3
@@ -399,7 +369,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114084989803403246
->>>>>>> menu
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -410,7 +379,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5263bd8b873cd6846bb357a0baef3c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFlashingRed: 0
   isShielded: 0
   shield: {fileID: 1018647704215016, guid: 87951405076626148b73172fd65c0c2f, type: 2}
   health: 1
