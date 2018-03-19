@@ -183,7 +183,7 @@ MonoBehaviour:
   isShielded: 0
   fire: {fileID: 1023165506054376, guid: cf6e9ca47fd343240acefba298457db3, type: 2}
   ice: {fileID: 1820028514283620, guid: eb0cce0e7dfe08e4a8ae654a8756b46b, type: 2}
-  lightning: {fileID: 1209041076173112, guid: 824c6ce9f0e278d42a1dc7fc15cea608, type: 2}
+  lightning: {fileID: 1418259837486494, guid: 824c6ce9f0e278d42a1dc7fc15cea608, type: 2}
   shield: {fileID: 1018647704215016, guid: 95ccebdda8ab0bf439b2f6f3a8c42450, type: 2}
   levels: {fileID: 0}
   hp: 0

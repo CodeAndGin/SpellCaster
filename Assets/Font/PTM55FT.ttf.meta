@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 7ee4c9a29e668b14d99272b3a15b146b
 timeCreated: 1521404415
+=======
+guid: d201c23d618e7d446ac608848a24174b
+timeCreated: 1521408702
+>>>>>>> Tutorial
 licenseType: Free
 TrueTypeFontImporter:
   serializedVersion: 4
