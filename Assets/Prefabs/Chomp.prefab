@@ -595,7 +595,7 @@ MonoBehaviour:
   amountTimeShocked: 2
   amountTimeSlowed: 3
   amountTimeBurned: 3
-  tickFreq: 0.25
+  tickFreq: 1
   damagePerTick: 0.1
 --- !u!212 &212060924198132922
 SpriteRenderer:

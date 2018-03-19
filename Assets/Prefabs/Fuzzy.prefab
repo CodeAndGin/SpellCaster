@@ -507,7 +507,7 @@ MonoBehaviour:
   amountTimeShocked: 2
   amountTimeSlowed: 3
   amountTimeBurned: 3
-  tickFreq: 0.25
+  tickFreq: 1
   damagePerTick: 0.1
 --- !u!114 &114062339745901532
 MonoBehaviour:
