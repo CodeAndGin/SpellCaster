@@ -43,8 +43,10 @@ public class spellMove : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 			//tells whatever trigger touches it to do the "playerInteraction" function
 		if (other.gameObject.tag == "EnemyProjectile") {
+			Debug.Log ("Hit detected");
 			other.gameObject.SendMessage("playerInteraction", gameObject);
 			other.gameObject.SendMessage("death"); //destroys Projectiles
+			death();
 		}
 	}
 }
