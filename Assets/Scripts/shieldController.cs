@@ -39,6 +39,7 @@ public class shieldController : MonoBehaviour {
 		if (gameObject.tag == "playerShield") owner.GetComponent<playerController>().isShielded = false;
 		if (gameObject.tag == "EnemyShield") owner.GetComponent<enemyController>().isShielded = false;
 		Destroy(gameObject);
+
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
