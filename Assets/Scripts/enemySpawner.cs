@@ -69,9 +69,10 @@ public class enemySpawner : MonoBehaviour {
 
 	IEnumerator spawn() {
 		while (enemyNumber < maxEnemies) {
-			yield return new WaitForSeconds(5.0f);
+			yield return new WaitForSeconds(7.0f);
 	        newEnemy = Instantiate(enemies[(int)Math.Floor((double)UnityEngine.Random.Range(0, 3))], transform.position, Quaternion.identity) as GameObject;
 	        enemyNumber++;
+			Debug.Log("enemy no: "+ enemyNumber);
 		}
 	}
 

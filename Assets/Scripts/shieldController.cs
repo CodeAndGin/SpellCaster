@@ -26,7 +26,7 @@ public class shieldController : MonoBehaviour {
 	}
 
 	void enemyInteraction(GameObject enemy) {
-		enemy.gameObject.SendMessage("damage");
+		enemy.gameObject.SendMessage("damage", 1f);
         if (gameObject.tag == "playerShield")  damage();
 	}
 
@@ -62,6 +62,6 @@ public class shieldController : MonoBehaviour {
         {
             health++;
         }
-		
+
 	}
 }

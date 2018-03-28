@@ -1,15 +1,8 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 7ee4c9a29e668b14d99272b3a15b146b
-timeCreated: 1521404415
-=======
-guid: d201c23d618e7d446ac608848a24174b
-timeCreated: 1521408702
->>>>>>> Tutorial
-licenseType: Free
+guid: 817fbefc8e0230045825a3e216a563e9
 TrueTypeFontImporter:
   serializedVersion: 4
-  fontSize: 16
+  fontSize: 36
   forceTextureCase: -2
   characterSpacing: 0
   characterPadding: 1

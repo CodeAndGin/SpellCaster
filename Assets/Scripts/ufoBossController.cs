@@ -27,8 +27,8 @@ public class ufoBossController : MonoBehaviour {
 	}
 
 	void damage(float d) {
-		fireRate /= d*1.2f;
-		GameObject.Find("Boss Path/BossPathStart").GetComponent<bossPath>().moveSpeed *= 1.2f;
+		fireRate /= 1.2f;
+		GameObject.Find("Boss Path/BossPathStart").GetComponent<bossPath>().moveSpeed *= 1.1f;
 		health -= d; //to be called by other scripts to damage the enemy
 		StartCoroutine("flashRed");
 	}
