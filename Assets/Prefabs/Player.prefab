@@ -182,7 +182,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isShielded: 0
   fire: {fileID: 1023165506054376, guid: cf6e9ca47fd343240acefba298457db3, type: 2}
+  fireball: {fileID: 0}
   ice: {fileID: 1820028514283620, guid: eb0cce0e7dfe08e4a8ae654a8756b46b, type: 2}
+  icicle: {fileID: 0}
   lightning: {fileID: 1418259837486494, guid: 824c6ce9f0e278d42a1dc7fc15cea608, type: 2}
   shield: {fileID: 1018647704215016, guid: 95ccebdda8ab0bf439b2f6f3a8c42450, type: 2}
   levels: {fileID: 0}
@@ -199,6 +201,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -214,6 +217,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -231,3 +235,4 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
