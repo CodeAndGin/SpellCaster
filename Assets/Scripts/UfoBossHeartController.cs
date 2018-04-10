@@ -8,6 +8,10 @@ public class UfoBossHeartController : MonoBehaviour {
 	float origHealth;
 	// Use this for initialization
 	void Start () {
+        for (int i = 0; i < 20; i ++)
+        {
+            hearts[i] = transform.Find("BossHearts/health" + i).gameObject;
+        }
 		origHealth = gameObject.GetComponent<ufoBossController>().GetHealth();
 	}
 

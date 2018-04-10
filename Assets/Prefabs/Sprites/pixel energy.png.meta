@@ -1,0 +1,1002 @@
+fileFormatVersion: 2
+guid: 4a6b495252dfaa3439f75e0997de30dd
+timeCreated: 1523384653
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: pixel energy_0
+    21300002: pixel energy_1
+    21300004: pixel energy_2
+    21300006: pixel energy_3
+    21300008: pixel energy_4
+    21300010: pixel energy_5
+    21300012: pixel energy_6
+    21300014: pixel energy_7
+    21300016: pixel energy_8
+    21300018: pixel energy_9
+    21300020: pixel energy_10
+    21300022: pixel energy_11
+    21300024: pixel energy_12
+    21300026: pixel energy_13
+    21300028: pixel energy_14
+    21300030: pixel energy_15
+    21300032: pixel energy_16
+    21300034: pixel energy_17
+    21300036: pixel energy_18
+    21300038: pixel energy_19
+    21300040: pixel energy_20
+    21300042: pixel energy_21
+    21300044: pixel energy_22
+    21300046: pixel energy_23
+    21300048: pixel energy_24
+    21300050: pixel energy_25
+    21300052: pixel energy_26
+    21300054: pixel energy_27
+    21300056: pixel energy_28
+    21300058: pixel energy_29
+    21300060: pixel energy_30
+    21300062: pixel energy_31
+    21300064: pixel energy_32
+    21300066: pixel energy_33
+    21300068: pixel energy_34
+    21300070: pixel energy_35
+    21300072: pixel energy_36
+    21300074: pixel energy_37
+    21300076: pixel energy_38
+    21300078: pixel energy_39
+    21300080: pixel energy_40
+    21300082: pixel energy_41
+    21300084: pixel energy_42
+    21300086: pixel energy_43
+    21300088: pixel energy_44
+    21300090: pixel energy_45
+    21300092: pixel energy_46
+    21300094: pixel energy_47
+    21300096: pixel energy_48
+    21300098: pixel energy_49
+    21300100: pixel energy_50
+    21300102: pixel energy_51
+    21300104: pixel energy_52
+    21300106: pixel energy_53
+    21300108: pixel energy_54
+    21300110: pixel energy_55
+    21300112: pixel energy_56
+    21300114: pixel energy_57
+    21300116: pixel energy_58
+    21300118: pixel energy_59
+    21300120: pixel energy_60
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pixel energy_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 6847
+        width: 524
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_1
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 6848
+        width: 523
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_2
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 6848
+        width: 517
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_3
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 6848
+        width: 520
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_4
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 6853
+        width: 524
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_5
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 6283
+        width: 524
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_6
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 6283
+        width: 523
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_7
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 6283
+        width: 517
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_8
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 6283
+        width: 522
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_9
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 6283
+        width: 524
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_10
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 5716
+        width: 525
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_11
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 5716
+        width: 522
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_12
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 5716
+        width: 517
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_13
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 5716
+        width: 520
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_14
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 5716
+        width: 524
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_15
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 5142
+        width: 524
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_16
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 5143
+        width: 522
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_17
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 5142
+        width: 517
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_18
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 5145
+        width: 523
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_19
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 5143
+        width: 524
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_20
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 4578
+        width: 524
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_21
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 4578
+        width: 520
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_22
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 4578
+        width: 517
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_23
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 4578
+        width: 523
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_24
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 4578
+        width: 524
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_25
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 4002
+        width: 518
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_26
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 4002
+        width: 520
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_27
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 4007
+        width: 517
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_28
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 4001
+        width: 523
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_29
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 4007
+        width: 524
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_30
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 3437
+        width: 524
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_31
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 3440
+        width: 523
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_32
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 3438
+        width: 517
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_33
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 3438
+        width: 523
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_34
+      rect:
+        serializedVersion: 2
+        x: 2302
+        y: 3438
+        width: 518
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_35
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 2870
+        width: 524
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_36
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 2870
+        width: 522
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_37
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 2870
+        width: 517
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_38
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 2870
+        width: 522
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_39
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 2870
+        width: 524
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_40
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 2303
+        width: 524
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_41
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 2297
+        width: 522
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_42
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 2297
+        width: 517
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_43
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 2297
+        width: 522
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_44
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 2297
+        width: 524
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_45
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1732
+        width: 518
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_46
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1732
+        width: 523
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_47
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1732
+        width: 517
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_48
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 1732
+        width: 523
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_49
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 1732
+        width: 524
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_50
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1165
+        width: 524
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_51
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1165
+        width: 520
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_52
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1165
+        width: 517
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_53
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 1165
+        width: 520
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_54
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 1165
+        width: 525
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_55
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 591
+        width: 524
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_56
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 591
+        width: 522
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_57
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 594
+        width: 517
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_58
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 591
+        width: 523
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_59
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 594
+        width: 524
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pixel energy_60
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 24
+        width: 518
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
