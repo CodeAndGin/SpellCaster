@@ -17,6 +17,9 @@ public class enemyController : MonoBehaviour {
 	private levelController levels;
 	//To tell the spawner if the enemy had died
 	private GameObject spawner;
+    //remove enemies colliding when one stops and dies
+    private Collider2D coll;
+
     bool played = false;
 
 	void Start () {
@@ -29,6 +32,7 @@ public class enemyController : MonoBehaviour {
 		//Tells the spawner that there is an enemy active
 		spawner.gameObject.SendMessage("enemyIsAlive");
 		levels = GameObject.Find("LevelController").GetComponent<levelController>();
+        coll = gameObject.GetComponent<Collider2D>();
 	}
 
 	void shieldBuff () {
@@ -68,8 +72,12 @@ public class enemyController : MonoBehaviour {
 	}
 
     void OnTriggerEnter2D(Collider2D other) {
-		other.gameObject.SendMessage("enemyInteraction", gameObject);	//tells whatever trigger touches it to do the "enemyInteraction" function
-		if (other.gameObject.tag == "Projectile" || other.gameObject.tag == "Shield") other.gameObject.SendMessage("death"); //destroys Projectiles and shields
+        other.gameObject.SendMessage("enemyInteraction", gameObject);	//tells whatever trigger touches it to do the "enemyInteraction" function
+        if (other.gameObject.tag == "playerShield")
+        { 
+            StartCoroutine("attackShield");
+        }
+        if (other.gameObject.tag == "Projectile" || other.gameObject.tag == "Shield") other.gameObject.SendMessage("death"); //destroys Projectiles and shields
 	}
 
 	void OnCollisionEnter2D(Collision2D other) {
@@ -79,22 +87,33 @@ public class enemyController : MonoBehaviour {
             speed = 0;
             StartCoroutine("attack");
 		}
-		if (other.gameObject.tag == "Enemy") {
+            if (other.gameObject.tag == "Enemy") {
 			oldSpeed = speed;
             speed = 0;
             //StartCoroutine("attack");
 		}
 	}
 
-	void OnCollisionExit2D(Collision2D other) {
-		if (other.gameObject.tag == "Enemy") {
-			speed = oldSpeed;
-		}
+    void OnCollisionExit2D(Collision2D other) {
+        if (dying == false) { 
+            if (other.gameObject.tag == "Enemy") {
+                Debug.Log("Reset Speed");
+                if (oldSpeed != 0) {
+                    speed = oldSpeed;
+                }
+                else
+                {
+                    speed = 2;
+                }
+            }
+        }
 	}
 
 	void death() {
 		dying = true;
         speed = 0;
+        rb.gravityScale = 0;
+        Destroy(coll);
 
         if (played == false) {	//yeah so the sound is being played in death() and the death is happening in deathSound() dont ask pls;
             GetComponent<AudioSource>().volume = 0.5f;
@@ -130,7 +149,25 @@ public class enemyController : MonoBehaviour {
         StopCoroutine("attack");
     }
 
-	public float GetSpeed () {
+    IEnumerator attackShield()
+    {
+        while (health > 0)
+        {
+            yield return new WaitForSeconds(2f);
+            if (health <= 0)
+            {
+                StopCoroutine("attack");
+            }
+            else
+            {
+                GameObject.FindWithTag("playerShield").gameObject.SendMessage("damage");
+            }
+        }
+        StopCoroutine("attack");
+    }
+
+
+    public float GetSpeed () {
 		return speed;
 	}
 

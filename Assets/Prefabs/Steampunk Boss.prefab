@@ -376,7 +376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 1980410797947156, guid: 66e0f22ddb0fd524f823c99cbede7090,
     type: 2}
-  health: 8
+  health: 4
   walkNoise: {fileID: 82063958493186966}
   winningLine: {fileID: 82840079968338264}
   deathAudio: {fileID: 82139866708241968}

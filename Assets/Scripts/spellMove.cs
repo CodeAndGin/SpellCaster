@@ -23,10 +23,12 @@ public class spellMove : MonoBehaviour {
 		if (gameObject.name == "Fireball" || gameObject.name == "Fireball(Clone)") {
 			enemy.gameObject.SendMessage("fireballBurn");
 			enemy.gameObject.SendMessage("damage", damageDealt);
+            Debug.Log("Sent fireball dmg");
 		} else if (gameObject.name == "Icicle" || gameObject.name == "Icicle(Clone)") {
 			enemy.gameObject.SendMessage("icicleSlowDown");
 			enemy.gameObject.SendMessage("damage", damageDealt);
-		} else {
+            Debug.Log("Sent icicle dmg");
+        } else {
 			enemy.gameObject.SendMessage("damage", damageDealt);
 		}
 
@@ -43,8 +45,10 @@ public class spellMove : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 			//tells whatever trigger touches it to do the "playerInteraction" function
 		if (other.gameObject.tag == "EnemyProjectile") {
+			Debug.Log ("Hit detected");
 			other.gameObject.SendMessage("playerInteraction", gameObject);
 			other.gameObject.SendMessage("death"); //destroys Projectiles
+			death();
 		}
 	}
 }
