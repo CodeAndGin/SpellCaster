@@ -7,7 +7,7 @@ public class mechaBossController : MonoBehaviour {
     private Animator anim;
     public GameObject projectilePrefab;
     private GameObject movingProjectile;
-    public float health = 8;
+    public float health;
 
     private GameObject spawner;
     private levelController levels;
@@ -25,6 +25,10 @@ public class mechaBossController : MonoBehaviour {
         levels = GameObject.Find("LevelController").GetComponent<levelController>();
         walkNoise.Play();
     }
+    
+    public float GetHealth() {
+		return health;
+	}
 
     void OnTriggerEnter2D(Collider2D other)
     {

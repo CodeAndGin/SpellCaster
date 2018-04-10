@@ -26,6 +26,10 @@ public class ufoBossController : MonoBehaviour {
 		if (health < 1) death();
 	}
 
+	public float GetHealth() {
+		return health;
+	}
+
 	void damage(float d) {
 		fireRate /= 1.2f;
 		GameObject.Find("Boss Path/BossPathStart").GetComponent<bossPath>().moveSpeed *= 1.1f;

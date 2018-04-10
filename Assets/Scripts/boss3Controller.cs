@@ -36,16 +36,19 @@ public class boss3Controller : MonoBehaviour {
         if (transform.position.y < -30) death();
     }
 
-    void damage()
+    void damage(float d)
     {
-        fireRate /= 1.2f;
+        fireRate /= 1.1f;
        // health -= 1f; //to be called by other scripts to damage the enemy
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag != "EnemyProjectile") other.gameObject.SendMessage("enemyInteraction", gameObject);   //tells whatever trigger touches it to do the "enemyInteraction" function
-        if (other.gameObject.tag == "Projectile" || other.gameObject.tag == "Shield") other.gameObject.SendMessage("death"); //destroys Projectiles and shields
+        if (other.gameObject.tag == "Projectile" || other.gameObject.tag == "Shield") {
+            other.gameObject.SendMessage("death");
+            gameObject.SendMessage("BaitandSwitch"); //switches the health bars
+        }   //destroys Projectiles and shields
     }
 
     void death()
@@ -67,11 +70,11 @@ public class boss3Controller : MonoBehaviour {
     {
         yield return new WaitForSecondsRealtime(1.5f);
         spawner.gameObject.SendMessage("enemyIsDead");
-        
+
         //GameObject.Find("Boss path/Boss3Spawner").GetComponent<bossPath>().spawned = false;
         Destroy(gameObject);
         levels.gameObject.SendMessage("nLevel");
-        
+
         StopCoroutine("deathSound");
     }
 
@@ -84,7 +87,7 @@ public class boss3Controller : MonoBehaviour {
     {
         while (true)
         {
-            
+
             yield return new WaitForSeconds(fireRate);
             fireProjectile();
         }

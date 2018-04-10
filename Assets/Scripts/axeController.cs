@@ -10,7 +10,9 @@ public class axeController : MonoBehaviour
     public AudioSource dmgSound;
 
     // Use this for initialization
-    
+    public float GetHealth() {
+		return health;
+	}
 
     void Update()
     {
@@ -18,7 +20,7 @@ public class axeController : MonoBehaviour
         {
             boss3 = GameObject.FindWithTag("Miniboss");
         }
-        if (health < 1) fall();
+        if (health < 0) fall();
         if (transform.position.y < -30) death();
     }
 
@@ -38,7 +40,12 @@ public class axeController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag != "EnemyProjectile") other.gameObject.SendMessage("enemyInteraction", gameObject);   //tells whatever trigger touches it to do the "enemyInteraction" function
-        if (other.gameObject.tag == "Projectile" || other.gameObject.tag == "Shield") other.gameObject.SendMessage("death"); //destroys Projectiles and shields
+        if (other.gameObject.tag == "Projectile" || other.gameObject.tag == "Shield") {
+            other.gameObject.SendMessage("death"); //destroys Projectiles and shields
+            if (GameObject.Find("BossHeartsDUD") is GameObject) {
+                GameObject.Find("boss3Walking").gameObject.SendMessage("BaitandSwitch");
+            }
+        }
     }
 
     void fall()
