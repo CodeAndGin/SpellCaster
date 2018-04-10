@@ -44,7 +44,7 @@ public class TextController : MonoBehaviour {
 
 	void checkEnemyName() {
 		GameObject[] EnemyArray = GameObject.FindGameObjectsWithTag("Enemy");
-		if (EnemyArray[0] is GameObject) {
+		if (EnemyArray.Length > 0) {
 			enemyLetter = EnemyArray[0].GetComponent<enemyName>().firstLetter;
 			enemyLetterCaps = EnemyArray[0].GetComponent<enemyName>().firstLetterAlt;
 		}
