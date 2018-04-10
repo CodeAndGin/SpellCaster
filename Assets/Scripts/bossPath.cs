@@ -52,8 +52,10 @@ public class bossPath : MonoBehaviour {
 
     void spawner()
     {
-      movingBoss = Instantiate(enemyPreFab, transform.position, Quaternion.identity) as GameObject;
-      movingBoss.transform.position = gameObject.transform.position;
-      spawned = true;
+        if (spawned == false) {
+          movingBoss = Instantiate(enemyPreFab, transform.position, Quaternion.identity) as GameObject;
+          movingBoss.transform.position = gameObject.transform.position;
+          spawned = true;
+      }
     }
 }
