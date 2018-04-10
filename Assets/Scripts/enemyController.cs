@@ -71,6 +71,11 @@ public class enemyController : MonoBehaviour {
 		return health;
 	}
 
+    public bool GetIsShielded()
+    {
+        return isShielded;
+    }
+
     void OnTriggerEnter2D(Collider2D other) {
         other.gameObject.SendMessage("enemyInteraction", gameObject);	//tells whatever trigger touches it to do the "enemyInteraction" function
         if (other.gameObject.tag == "playerShield")
