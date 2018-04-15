@@ -16,7 +16,7 @@ public class dudHeartController : MonoBehaviour {
 
 	public void BaitandSwitch () {
 		if (transform.Find("BossHeartsDUD") is Transform) {
-			GameObject.Find("axe").gameObject.SendMessage("EnableHearts");
+			GameObject.Find("axe(Clone)").gameObject.SendMessage("EnableHearts");
 			Destroy(transform.Find("BossHeartsDUD").gameObject);
 		}
 	}

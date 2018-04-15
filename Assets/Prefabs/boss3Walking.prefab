@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 114471686705214930}
   m_Layer: 0
   m_Name: boss3Walking
-  m_TagString: Miniboss
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1205,7 +1205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70f81e6e391356b4897e70754acead5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 13.5
+  thrust: 14
   rb: {fileID: 50272847266981792}
   jumpSound: {fileID: 82296393882176172}
 --- !u!114 &114905856417370794

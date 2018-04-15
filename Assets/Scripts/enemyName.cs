@@ -13,8 +13,16 @@ public class enemyName : MonoBehaviour {
 
 	private Text display;
 
+	private char[] bossLetters;
+
 	// Use this for initialization
 	void Start () {
+		bossLetters = new char[4];
+		bossLetters[0] = 'l';
+		bossLetters[1] = 'g';
+		bossLetters[2] = 'c';
+		bossLetters[3] = 'f';
+
 		names = new ArrayList();
 		names.Add("Fiend");
 		names.Add("Goblin");
@@ -30,10 +38,22 @@ public class enemyName : MonoBehaviour {
         {
             name = (string)names[2];
         }
+		if (gameObject.tag == "Miniboss") {
+			int index = UnityEngine.Random.Range(0,4);
+			firstLetter = bossLetters[index];
+			transform.Find("BossNameParent").gameObject.SendMessage("MakeNewName", firstLetter);
+		}
 	}
 
 	// Update is called once per frame
 	void Update () {
 
+	}
+
+	void BossRandomiseName() {
+		int index = UnityEngine.Random.Range(0,4);
+		firstLetter = bossLetters[index];
+
+		transform.Find("BossNameParent").gameObject.SendMessage("MakeNewName", firstLetter);
 	}
 }

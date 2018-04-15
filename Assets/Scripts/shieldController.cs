@@ -9,7 +9,8 @@ public class shieldController : MonoBehaviour {
 
 	void Start () {
 		if (gameObject.tag == "playerShield") owner = GameObject.FindWithTag("Player");
-		if (gameObject.tag == "EnemyShield") owner = GameObject.FindWithTag("Enemy");
+		if (gameObject.tag == "EnemyShield" && GameObject.FindWithTag("Enemy") is GameObject) owner = GameObject.FindWithTag("Enemy");
+		if (gameObject.tag == "EnemyShield" && GameObject.FindWithTag("Miniboss") is GameObject) owner = GameObject.FindWithTag("Miniboss");
 
 		if (gameObject.tag == "playerShield") owner.GetComponent<playerController>().isShielded = true;
 		if (gameObject.tag == "EnemyShield") owner.GetComponent<enemyController>().isShielded = true;
@@ -26,7 +27,7 @@ public class shieldController : MonoBehaviour {
 	}
 
 	void enemyInteraction(GameObject enemy) {
-		enemy.gameObject.SendMessage("damage", 1f);
+		if (owner.tag == "Player") enemy.gameObject.SendMessage("damage", 1f);
         if (gameObject.tag == "playerShield")  damage();
 	}
 
@@ -37,7 +38,7 @@ public class shieldController : MonoBehaviour {
 
 	public void death() {
 		if (gameObject.tag == "playerShield") owner.GetComponent<playerController>().isShielded = false;
-		if (gameObject.tag == "EnemyShield") owner.GetComponent<enemyController>().isShielded = false;
+		if (gameObject.tag == "EnemyShield" && GameObject.FindWithTag("Enemy") is GameObject) owner.GetComponent<enemyController>().isShielded = false;
 		Destroy(gameObject);
 
 	}

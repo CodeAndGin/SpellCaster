@@ -90,6 +90,9 @@ public class TextController : MonoBehaviour {
 		letterBig += enemyLetterCaps;
 		//if (GameObject.FindWithTag("Enemy") is GameObject || GameObject.FindWithTag("Miniboss") is GameObject) {
 			GameObject[] EnemyArray = GameObject.FindGameObjectsWithTag("Enemy");
+			if (EnemyArray.Length == 0 && GameObject.FindWithTag("Miniboss") is GameObject) {
+				EnemyArray = GameObject.FindGameObjectsWithTag("Miniboss");
+			}
 			if (EnemyArray.Length > 0) {
 				if ((spell.Contains(letter) || spell.Contains(letterBig)) && EnemyArray[0] is GameObject) {
 					if (GameObject.FindWithTag("EnemyShield") is GameObject) {

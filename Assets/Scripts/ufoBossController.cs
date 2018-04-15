@@ -14,6 +14,9 @@ public class ufoBossController : MonoBehaviour {
     public AudioSource aliveNoise;
     bool playOnce = false;
 
+	public GameObject shield;
+    private GameObject shieldClone;
+
 	// Use this for initialization
 	void Start () {
 		spawner = GameObject.Find("EnemySpawner");
@@ -33,8 +36,14 @@ public class ufoBossController : MonoBehaviour {
 	void damage(float d) {
 		fireRate /= 1.2f;
 		GameObject.Find("Boss Path/BossPathStart").GetComponent<bossPath>().moveSpeed *= 1.1f;
+		gameObject.SendMessage("BossRandomiseName");
 		health -= d; //to be called by other scripts to damage the enemy
 		StartCoroutine("flashRed");
+	}
+
+	void shieldBuff () {
+		shieldClone = Instantiate(shield, transform.position, Quaternion.identity);
+		shieldClone.transform.parent = transform;
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {

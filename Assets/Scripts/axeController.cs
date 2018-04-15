@@ -8,11 +8,19 @@ public class axeController : MonoBehaviour
     public float health;
     private GameObject boss3;
     public AudioSource dmgSound;
+    public GameObject shield;
+    private GameObject shieldClone;
 
     // Use this for initialization
     public float GetHealth() {
 		return health;
 	}
+
+    void shieldBuff () {
+		shieldClone = Instantiate(shield, transform.position, Quaternion.identity);
+		shieldClone.transform.parent = transform;
+	}
+
 
     void Update()
     {
@@ -28,13 +36,9 @@ public class axeController : MonoBehaviour
     {
         dmgSound.volume = 0.5f;
         dmgSound.Play();
+        gameObject.SendMessage("BossRandomiseName");
         health -= d; //to be called by other scripts to damage the enemy
         StartCoroutine("flashRed");
-    }
-
-    void shieldBuff()
-    {
-        //do nothing, errors if this isnt here, will fix later lol
     }
 
     void OnTriggerEnter2D(Collider2D other)

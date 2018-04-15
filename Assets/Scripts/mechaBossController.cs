@@ -12,6 +12,9 @@ public class mechaBossController : MonoBehaviour {
     private GameObject spawner;
     private levelController levels;
 
+    public GameObject shield;
+    private GameObject shieldClone;
+
     public AudioSource walkNoise;
     public AudioSource winningLine;
     public AudioSource deathAudio;
@@ -25,7 +28,7 @@ public class mechaBossController : MonoBehaviour {
         levels = GameObject.Find("LevelController").GetComponent<levelController>();
         walkNoise.Play();
     }
-    
+
     public float GetHealth() {
 		return health;
 	}
@@ -82,9 +85,15 @@ public class mechaBossController : MonoBehaviour {
 
     }
 
+    void shieldBuff () {
+		shieldClone = Instantiate(shield, transform.position, Quaternion.identity);
+		shieldClone.transform.parent = transform;
+	}
+
     void damage(float d)
     {
         health -= d; //to be called by other scripts to damage the enemy
+        gameObject.SendMessage("BossRandomiseName");
         StartCoroutine("flashRed");
     }
 
