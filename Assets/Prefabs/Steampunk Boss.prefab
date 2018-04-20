@@ -1275,6 +1275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ea4bc6d486cff4fb505356ff863f21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisBosshasanname: 1
   firstLetter: 113
   firstLetterAlt: 81
 --- !u!114 &114189016292270206

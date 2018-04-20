@@ -43,7 +43,7 @@ public class mechaBossController : MonoBehaviour {
     void Update () {
         StartCoroutine("attacking");
 
-        if (health < 1) death();
+        if (health < 0) death();
 	}
 
     IEnumerator attacking()

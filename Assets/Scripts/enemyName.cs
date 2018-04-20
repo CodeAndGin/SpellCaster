@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class enemyName : MonoBehaviour {
-
+	public bool thisBosshasanname;
 	private ArrayList names;
 	private string name;
 	public char firstLetter;
@@ -38,7 +38,7 @@ public class enemyName : MonoBehaviour {
         {
             name = (string)names[2];
         }
-		if (gameObject.tag == "Miniboss") {
+		if (gameObject.tag == "Miniboss" && thisBosshasanname) {
 			int index = UnityEngine.Random.Range(0,4);
 			firstLetter = bossLetters[index];
 			transform.Find("BossNameParent").gameObject.SendMessage("MakeNewName", firstLetter);

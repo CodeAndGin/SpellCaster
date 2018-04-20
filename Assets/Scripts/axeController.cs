@@ -36,7 +36,7 @@ public class axeController : MonoBehaviour
     {
         dmgSound.volume = 0.5f;
         dmgSound.Play();
-        gameObject.SendMessage("BossRandomiseName");
+        //gameObject.SendMessage("BossRandomiseName");
         health -= d; //to be called by other scripts to damage the enemy
         StartCoroutine("flashRed");
     }

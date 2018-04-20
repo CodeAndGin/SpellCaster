@@ -38,7 +38,7 @@ public class boss3Controller : MonoBehaviour {
 
     void damage(float d)
     {
-        fireRate /= 1.1f;
+        //fireRate /= 1.1f;
        // health -= 1f; //to be called by other scripts to damage the enemy
     }
 

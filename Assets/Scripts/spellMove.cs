@@ -34,7 +34,7 @@ public class spellMove : MonoBehaviour {
 
 	}
 
-	public void damage(int a) {
+	public void damage() {
 		death();
 	}
 

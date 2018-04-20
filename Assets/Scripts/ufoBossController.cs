@@ -26,7 +26,7 @@ public class ufoBossController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (health < 1) death();
+		if (health < 0) death();
 	}
 
 	public float GetHealth() {
@@ -36,7 +36,7 @@ public class ufoBossController : MonoBehaviour {
 	void damage(float d) {
 		fireRate /= 1.2f;
 		GameObject.Find("Boss Path/BossPathStart").GetComponent<bossPath>().moveSpeed *= 1.1f;
-		gameObject.SendMessage("BossRandomiseName");
+		//gameObject.SendMessage("BossRandomiseName");
 		health -= d; //to be called by other scripts to damage the enemy
 		StartCoroutine("flashRed");
 	}
