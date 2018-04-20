@@ -6,7 +6,7 @@ public class axeController : MonoBehaviour
 {
 
     public float health;
-    private GameObject boss3;
+    public GameObject boss3;
     public AudioSource dmgSound;
     public GameObject shield;
     private GameObject shieldClone;
@@ -24,9 +24,9 @@ public class axeController : MonoBehaviour
 
     void Update()
     {
-        if (GameObject.FindWithTag("Miniboss") is GameObject)
+        if (GameObject.Find("boss3Walking(Clone)") is GameObject)
         {
-            boss3 = GameObject.FindWithTag("Miniboss");
+            boss3 = GameObject.Find("boss3Walking(Clone)");
         }
         if (health < 0) fall();
         if (transform.position.y < -30) death();

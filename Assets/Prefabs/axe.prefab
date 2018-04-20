@@ -879,7 +879,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1149024982937090}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.09455027, y: -6.0758886, z: 5.658385}
+  m_LocalPosition: {x: -1, y: -6.0758886, z: 5.658385}
   m_LocalScale: {x: 1.3796707, y: 1.3796707, z: 1.3796707}
   m_Children:
   - {fileID: 4444868115836144}
@@ -1148,6 +1148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ea4bc6d486cff4fb505356ff863f21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisBosshasanname: 0
   firstLetter: 45
   firstLetterAlt: 95
 --- !u!114 &114272127736134608
@@ -1352,6 +1353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2.5
+  boss3: {fileID: 0}
   dmgSound: {fileID: 82406491902737054}
   shield: {fileID: 1018647704215016, guid: 87951405076626148b73172fd65c0c2f, type: 2}
 --- !u!114 &114732347274558590
