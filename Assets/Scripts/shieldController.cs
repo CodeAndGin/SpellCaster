@@ -32,6 +32,7 @@ public class shieldController : MonoBehaviour {
 	}
 
 	public void damage() {
+        GameObject.FindWithTag("Player").gameObject.SendMessage("decreaseShield");
 		health--;
 		if (health < 1) death();
 	}

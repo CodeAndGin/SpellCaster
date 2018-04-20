@@ -13,6 +13,8 @@ public class playerController : MonoBehaviour
     public GameObject lightning;
     public GameObject shield;
     private GameObject spell;
+    private int shieldHP = 0;
+    public GameObject [] blueHearts = new GameObject[3];
 
     public GameObject levels;
     public int hp;
@@ -31,9 +33,43 @@ public class playerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        showBlueHearts();
         if (hp < 1)
         {
             death();
+        }
+    }
+
+    public void decreaseShield()
+    {
+        shieldHP--;
+    }
+
+    void showBlueHearts()
+    {
+        if(shieldHP >= 1)
+        {
+            blueHearts[0].GetComponent<SpriteRenderer>().enabled = true;
+        }
+        else
+        {
+            blueHearts[0].GetComponent<SpriteRenderer>().enabled = false;
+        }
+        if (shieldHP >= 2)
+        {
+            blueHearts[1].GetComponent<SpriteRenderer>().enabled = true;
+        }
+        else
+        {
+            blueHearts[1].GetComponent<SpriteRenderer>().enabled = false;
+        }
+        if (shieldHP >= 3)
+        {
+            blueHearts[2].GetComponent<SpriteRenderer>().enabled = true;
+        }
+        else
+        {
+            blueHearts[2].GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 
@@ -71,32 +107,33 @@ public class playerController : MonoBehaviour
     {
         for (int i = 0; i < hp; i++)
         {
-            newHeart = Instantiate(heart, new Vector3(-i + -10.5f, -3.0f, 109.8f), Quaternion.identity) as GameObject;
+            newHeart = Instantiate(heart, new Vector3(-i + -10.5f, -2.28f, 109.8f), Quaternion.identity) as GameObject;
+            newHeart.transform.parent = transform;
         }
     }
 
     void castSpell(string s)
     {
+        Vector3 pos1 = new Vector3(-8.172113f, -5.097621f, 162);
         if (s == "fire")
         {
-            spell = Instantiate(fire, transform.position, ice.transform.rotation) as GameObject;
+            spell = Instantiate(fire, pos1, ice.transform.rotation) as GameObject;
         }
         else if (s == "fireball")
         {
-            spell = Instantiate(fireball, transform.position, Quaternion.identity) as GameObject;
+            spell = Instantiate(fireball, pos1, Quaternion.identity) as GameObject;
         }
         else if (s == "ice")
         {
-            spell = Instantiate(ice, transform.position, ice.transform.rotation) as GameObject;
+            spell = Instantiate(ice, pos1, ice.transform.rotation) as GameObject;
         }
         else if (s == "icicle")
         {
-            Vector3 pos = new Vector3(transform.position.x + 1f, transform.position.y, transform.position.z);
-            spell = Instantiate(icicle, pos, ice.transform.rotation) as GameObject;
+            spell = Instantiate(icicle, pos1, ice.transform.rotation) as GameObject;
         }
         else if (s == "lightning")
         {
-            Vector3 pos = new Vector3(transform.position.x + 5f, transform.position.y - 0.5f, transform.position.z);
+            Vector3 pos = new Vector3(transform.position.x + 6f, transform.position.y - 0.5f, transform.position.z);
             spell = Instantiate(lightning, pos, Quaternion.identity) as GameObject;
         }
         else if (s == "shield")
@@ -104,10 +141,16 @@ public class playerController : MonoBehaviour
             if (GameObject.FindWithTag("playerShield") is GameObject)
             {
                 GameObject.FindWithTag("playerShield").gameObject.SendMessage("powerUp");
+                if (shieldHP < 3)
+                {
+                    shieldHP++;
+                }
             }
             else
             {
-                spell = Instantiate(shield, transform.position, Quaternion.identity) as GameObject;
+                Vector3 pos = new Vector3(transform.position.x, transform.position.y, transform.position.z - 1f);
+                spell = Instantiate(shield, pos, Quaternion.identity) as GameObject;
+                shieldHP = 1;
             }
         }
         else

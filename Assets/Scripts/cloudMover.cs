@@ -13,7 +13,7 @@ public class cloudMover : MonoBehaviour {
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        speed = 0.3f;
+        //speed = 0.3f;
     }
 
     // Update is called once per frame
